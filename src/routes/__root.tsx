@@ -8,6 +8,14 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
+import "@fontsource/dm-sans/600.css";
+import "@fontsource/syne/500.css";
+import "@fontsource/syne/600.css";
+import "@fontsource/syne/700.css";
+import "@fontsource/syne/800.css";
+
 import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
