@@ -345,6 +345,14 @@ function Versiones() {
 
           {/* VIP */}
           <article className="relative rounded-3xl p-10 md:p-12 flex flex-col gradient-brand text-[color:var(--cream)] overflow-hidden noise">
+            <img
+              src={silkImg}
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay pointer-events-none"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--azul)]/40 via-transparent to-[color:var(--magenta)]/40 pointer-events-none" />
             <div className="absolute top-6 right-6 inline-flex items-center gap-1.5 rounded-full bg-[color:var(--cream)]/15 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-[0.18em]">
               <Sparkles className="h-3 w-3" /> Recomendado
             </div>
@@ -556,6 +564,7 @@ function Landing() {
       <Hero />
       <Marquee />
       <Imagina />
+      <SobreMi />
       <Proceso />
       <Versiones />
       <Testimonios />
