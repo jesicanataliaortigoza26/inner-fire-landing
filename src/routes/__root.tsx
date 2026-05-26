@@ -8,6 +8,14 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 
+import "@fontsource/dm-sans/400.css";
+import "@fontsource/dm-sans/500.css";
+import "@fontsource/dm-sans/600.css";
+import "@fontsource/syne/500.css";
+import "@fontsource/syne/600.css";
+import "@fontsource/syne/700.css";
+import "@fontsource/syne/800.css";
+
 import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
@@ -72,14 +80,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Brújula Expansiva 1:1 — Mentoría con Jesica Ortigoza" },
+      { name: "description", content: "Mentoría estratégica 1:1 para ordenar, posicionar y escalar tu negocio con dirección. Método Brújula Expansiva™ — versiones Basic y VIP." },
+      { name: "author", content: "Jesica Ortigoza" },
+      { property: "og:title", content: "Brújula Expansiva 1:1 — Mentoría con Jesica Ortigoza" },
+      { property: "og:description", content: "Construí un negocio con dirección, claridad y coherencia. Mentoría 1:1 de 6 semanas." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
