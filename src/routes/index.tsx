@@ -14,6 +14,9 @@ import {
   Quote,
 } from "lucide-react";
 import heroImg from "@/assets/hero-brujula.jpg";
+import portraitImg from "@/assets/jesica-portrait.jpeg";
+import workspaceImg from "@/assets/editorial-workspace.jpg";
+import silkImg from "@/assets/silk-abstract.jpg";
 
 export const Route = createFileRoute("/")({
   component: Landing,
@@ -146,8 +149,8 @@ function Imagina() {
   ];
   return (
     <section className="py-28 md:py-40">
-      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-12 gap-12">
-        <div className="md:col-span-5">
+      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-12 gap-12 items-start">
+        <div className="md:col-span-5 md:sticky md:top-28">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Imaginá este escenario</div>
           <h2 className="font-display text-4xl md:text-5xl leading-tight">
             En las próximas semanas, todo empieza a tener <em className="italic text-[color:var(--verde)]">su lugar</em>.
@@ -155,6 +158,14 @@ function Imagina() {
           <p className="mt-6 text-foreground/70 leading-relaxed">
             No desde la exigencia. No desde el hacer constante. Desde la claridad.
           </p>
+          <div className="mt-10 overflow-hidden rounded-2xl border border-foreground/10">
+            <img
+              src={workspaceImg}
+              alt="Espacio editorial: cuaderno con notas, brújula de bronce y café"
+              loading="lazy"
+              className="w-full h-full object-cover aspect-[3/4]"
+            />
+          </div>
         </div>
         <ul className="md:col-span-7 space-y-1">
           {items.map((t, i) => (
@@ -167,6 +178,52 @@ function Imagina() {
             </li>
           ))}
         </ul>
+      </div>
+    </section>
+  );
+}
+
+function SobreMi() {
+  return (
+    <section id="sobre-mi" className="py-28 md:py-40 bg-[oklch(0.96_0.012_80)]">
+      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="md:col-span-5 relative">
+          <div className="absolute -inset-4 bg-gradient-to-br from-[color:var(--verde)]/15 to-[color:var(--magenta)]/15 rounded-3xl blur-2xl -z-10" />
+          <div className="overflow-hidden rounded-3xl border border-foreground/10 shadow-[0_30px_80px_-30px_rgba(5,54,94,0.35)]">
+            <img
+              src={portraitImg}
+              alt="Jesica Ortigoza, mentora y creadora del método Brújula Expansiva"
+              loading="lazy"
+              className="w-full h-full object-cover aspect-[4/5]"
+            />
+          </div>
+        </div>
+        <div className="md:col-span-7">
+          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Sobre mí</div>
+          <h2 className="font-display text-4xl md:text-5xl leading-tight">
+            Soy Jesica. <em className="italic gradient-text">Acompaño desde la claridad</em>, no desde el ruido.
+          </h2>
+          <div className="mt-8 space-y-5 text-foreground/75 leading-relaxed text-lg">
+            <p>
+              Creé un método para personas que ya tienen un negocio funcionando y necesitan ordenar, decidir y avanzar con dirección real.
+            </p>
+            <p>
+              Mi voz no impone, eleva. No sobreprotege, sostiene. Trabajo con elegancia, presencia y un toque de chispa: la claridad como acto de liderazgo.
+            </p>
+          </div>
+          <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
+            {[
+              ["+10", "años acompañando"],
+              ["100+", "procesos 1:1"],
+              ["1", "método propio"],
+            ].map(([n, l]) => (
+              <div key={l}>
+                <div className="font-display text-3xl text-[color:var(--verde)]">{n}</div>
+                <div className="mt-1 text-[11px] uppercase tracking-wider text-foreground/55">{l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -288,6 +345,14 @@ function Versiones() {
 
           {/* VIP */}
           <article className="relative rounded-3xl p-10 md:p-12 flex flex-col gradient-brand text-[color:var(--cream)] overflow-hidden noise">
+            <img
+              src={silkImg}
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay pointer-events-none"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--azul)]/40 via-transparent to-[color:var(--magenta)]/40 pointer-events-none" />
             <div className="absolute top-6 right-6 inline-flex items-center gap-1.5 rounded-full bg-[color:var(--cream)]/15 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-[0.18em]">
               <Sparkles className="h-3 w-3" /> Recomendado
             </div>
@@ -499,6 +564,7 @@ function Landing() {
       <Hero />
       <Marquee />
       <Imagina />
+      <SobreMi />
       <Proceso />
       <Versiones />
       <Testimonios />
