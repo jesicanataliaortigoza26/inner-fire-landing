@@ -642,13 +642,11 @@ function Faq() {
                     {isOpen ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
                   </span>
                 </button>
-                <div
-                  className={`overflow-hidden transition-all duration-500 ease-out ${
-                    isOpen ? "max-h-[40rem] pb-6" : "max-h-0"
-                  }`}
-                >
-                  <p className="text-foreground/70 leading-relaxed max-w-3xl">{it.a}</p>
-                </div>
+                {isOpen && (
+                  <div className="pb-6">
+                    <p className="text-foreground/70 leading-relaxed max-w-3xl">{it.a}</p>
+                  </div>
+                )}
               </div>
             );
           })}
@@ -674,20 +672,18 @@ function Cierre() {
           O podés decidir <em className="italic">hacer algo distinto</em>.
         </p>
 
-        <ul className="mt-10 flex flex-col items-center gap-2 text-[color:var(--cream)]/85 text-lg">
+        <ul className="mt-10 flex flex-col items-center gap-2 text-[color:var(--cream)]/85 font-display text-2xl md:text-3xl leading-snug">
           <li>Ordenar tu negocio</li>
           <li>Construir con dirección</li>
           <li>Avanzar con claridad</li>
         </ul>
 
-        <h2 className="mt-14 font-display text-4xl md:text-6xl text-[color:var(--cream)] leading-[1] text-balance">
-          Porque crecer no es <em className="italic">hacer más</em>.
-          <br />
-          Es saber <span className="gradient-text">hacia dónde estás yendo</span> y construir en coherencia con eso.
+        <h2 className="mt-14 font-display text-2xl md:text-4xl text-[color:var(--cream)] leading-tight text-balance max-w-3xl mx-auto">
+          Porque crecer no es <em className="italic">hacer más</em>. Es saber <span className="gradient-text">hacia dónde estás yendo</span> y construir en coherencia con eso.
         </h2>
 
-        <p className="mt-10 text-[color:var(--cream)]/70 leading-relaxed">
-          Si sentís que es momento, escribime por WhatsApp y vemos juntas si este proceso es para vos.
+        <p className="mt-10 text-[color:var(--cream)]/70 leading-relaxed max-w-xl mx-auto">
+          Si sentís que es el momento de ordenar tu negocio y avanzar con dirección, escribime por WhatsApp y vemos juntas si este proceso es para vos.
         </p>
 
         <div className="mt-10">
@@ -697,7 +693,7 @@ function Cierre() {
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 rounded-full bg-[color:var(--cream)] text-foreground px-8 py-4 text-base font-medium transition-all hover:scale-[1.02] hover:shadow-[0_20px_60px_-15px_var(--magenta)]"
           >
-            Escribir por WhatsApp
+            Conversemos en WhatsApp
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </a>
         </div>
