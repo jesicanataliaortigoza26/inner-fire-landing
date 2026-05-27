@@ -225,36 +225,41 @@ function Imagina() {
     "Un sistema real para vender que podés sostener en el tiempo.",
   ];
   return (
-    <section className="py-28 md:py-40">
-      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-12 gap-12 items-start">
-        <div className="md:col-span-5 md:sticky md:top-28">
+    <section className="py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Imaginá este escenario</div>
-          <h2 className="font-display text-4xl md:text-5xl leading-tight">
+          <h2 className="font-display text-3xl md:text-4xl leading-tight">
             En las próximas semanas, todo empieza a tener <em className="italic text-[color:var(--verde)]">su lugar</em>.
           </h2>
-          <p className="mt-6 text-foreground/70 leading-relaxed">
+          <p className="mt-5 text-foreground/70 leading-relaxed">
             No desde la exigencia. No desde el hacer constante. Desde la claridad.
           </p>
-          <div className="mt-10 overflow-hidden rounded-2xl border border-foreground/10">
-            <img
-              src={workspaceImg}
-              alt="Espacio editorial: cuaderno con notas, brújula de bronce y café"
-              loading="lazy"
-              className="w-full h-full object-cover aspect-[3/4]"
-            />
-          </div>
         </div>
-        <ul className="md:col-span-7 space-y-1">
-          {items.map((t, i) => (
-            <li
-              key={i}
-              className="group flex items-start gap-5 border-t border-foreground/10 py-6 last:border-b transition-all hover:pl-2"
-            >
-              <span className="font-display text-sm text-foreground/40 mt-1.5 tabular-nums">0{i + 1}</span>
-              <p className="text-lg md:text-xl text-foreground/85 text-pretty leading-snug">{t}</p>
-            </li>
-          ))}
-        </ul>
+
+        <div className="grid md:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+          <div className="md:col-span-5">
+            <div className="h-full overflow-hidden rounded-2xl border border-foreground/10">
+              <img
+                src={workspaceImg}
+                alt="Espacio editorial: cuaderno con notas, brújula de bronce y café"
+                loading="lazy"
+                className="w-full h-full object-cover min-h-[420px]"
+              />
+            </div>
+          </div>
+          <ul className="md:col-span-7 flex flex-col justify-between">
+            {items.map((t, i) => (
+              <li
+                key={i}
+                className="group flex items-start gap-5 border-t border-foreground/10 py-5 first:border-t-0 first:pt-0 last:pb-0 transition-all hover:pl-2"
+              >
+                <span className="font-display text-sm text-foreground/40 mt-1.5 tabular-nums">0{i + 1}</span>
+                <p className="text-base md:text-lg text-foreground/85 text-pretty leading-snug">{t}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
