@@ -12,11 +12,13 @@ import {
   Plus,
   Minus,
   Quote,
+  Play,
 } from "lucide-react";
 import heroImg from "@/assets/hero-brujula.jpg";
 import portraitImg from "@/assets/jesica-portrait.jpeg";
 import workspaceImg from "@/assets/editorial-workspace.jpg";
 import silkImg from "@/assets/silk-abstract.jpg";
+import videoThumb from "@/assets/video-thumbnail.jpg";
 
 export const Route = createFileRoute("/")({
   component: Landing,
