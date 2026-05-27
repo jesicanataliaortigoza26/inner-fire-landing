@@ -620,10 +620,10 @@ function Faq() {
   ];
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section id="faq" className="py-28 md:py-40">
+    <section id="faq" className="py-14 md:py-20">
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Preguntas frecuentes</div>
-        <h2 className="font-display text-4xl md:text-5xl leading-tight mb-12">
+        <h2 className="font-display text-3xl md:text-4xl leading-tight mb-10">
           Lo que quizás te estás preguntando.
         </h2>
         <div className="divide-y divide-foreground/10 border-y border-foreground/10">
