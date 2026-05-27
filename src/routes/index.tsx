@@ -595,7 +595,7 @@ function LlamadoIntermedio() {
     </section>
   );
 }
-
+function Faq() {
   const items = [
     {
       q: "¿Necesito tener todo claro antes de empezar?",
