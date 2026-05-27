@@ -542,10 +542,10 @@ function Testimonios() {
   ];
 
   return (
-    <section id="testimonios" className="py-28 md:py-40 bg-[oklch(0.96_0.012_80)]">
+    <section id="testimonios" className="py-14 md:py-20 bg-[oklch(0.96_0.012_80)]">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="max-w-2xl mb-16">
-          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Resultados reales</div>
+        <div className="max-w-2xl mb-12">
+          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Ellos dicen</div>
           <h2 className="font-display text-3xl md:text-4xl leading-tight md:whitespace-nowrap">
             No son frases. Son <em className="italic">decisiones tomadas</em>.
           </h2>
@@ -579,17 +579,17 @@ function Testimonios() {
 
 function LlamadoIntermedio() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-12 md:py-16">
       <div className="mx-auto max-w-3xl px-6 text-center">
         <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Tu próximo paso</div>
         <h2 className="font-display text-3xl md:text-4xl leading-tight text-balance">
           Si algo de todo esto te resonó, <em className="italic gradient-text">conversemos</em>.
         </h2>
         <p className="mt-5 text-foreground/70 leading-relaxed">
-          Una charla inicial por WhatsApp para ver si Brújula Expansiva es lo que tu negocio necesita ahora.
+          Definí por WhatsApp si Brújula Expansiva es el proceso para vos.
         </p>
         <div className="mt-8 flex justify-center">
-          <CtaButton>Agendar conversación</CtaButton>
+          <CtaButton>Conversemos en WhatsApp</CtaButton>
         </div>
       </div>
     </section>
@@ -620,10 +620,10 @@ function Faq() {
   ];
   const [open, setOpen] = useState<number | null>(0);
   return (
-    <section id="faq" className="py-28 md:py-40">
+    <section id="faq" className="py-14 md:py-20">
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Preguntas frecuentes</div>
-        <h2 className="font-display text-4xl md:text-5xl leading-tight mb-12">
+        <h2 className="font-display text-3xl md:text-4xl leading-tight mb-10">
           Lo que quizás te estás preguntando.
         </h2>
         <div className="divide-y divide-foreground/10 border-y border-foreground/10">
@@ -644,7 +644,7 @@ function Faq() {
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-500 ease-out ${
-                    isOpen ? "max-h-96 pb-6" : "max-h-0"
+                    isOpen ? "max-h-[40rem] pb-6" : "max-h-0"
                   }`}
                 >
                   <p className="text-foreground/70 leading-relaxed max-w-3xl">{it.a}</p>
@@ -660,19 +660,37 @@ function Faq() {
 
 function Cierre() {
   return (
-    <section className="relative overflow-hidden surface-dark py-32 md:py-44 noise">
-      <div className="relative mx-auto max-w-5xl px-6 text-center">
+    <section className="relative overflow-hidden surface-dark py-24 md:py-32 noise">
+      <div className="relative mx-auto max-w-4xl px-6 text-center">
         <Rocket className="h-8 w-8 mx-auto text-[color:var(--magenta)] mb-8" />
-        <h2 className="font-display text-5xl md:text-7xl lg:text-8xl text-[color:var(--cream)] leading-[0.95] text-balance">
-          Crecer no es <em className="italic">hacer más</em>.
+        <p className="font-display text-2xl md:text-3xl text-[color:var(--cream)]/85 leading-snug">
+          Podés seguir haciendo.
           <br />
-          Es saber <span className="gradient-text">hacia dónde</span>.
-        </h2>
-        <p className="mt-10 max-w-2xl mx-auto text-[color:var(--cream)]/70 text-lg leading-relaxed">
-          Si sentís que es el momento de ordenar tu negocio y avanzar con claridad,
-          escribime por WhatsApp y vemos si este proceso es para vos.
+          Podés seguir probando.
+          <br />
+          Podés seguir ajustando…
         </p>
-        <div className="mt-12">
+        <p className="mt-8 font-display text-2xl md:text-3xl text-[color:var(--cream)] leading-snug">
+          O podés decidir <em className="italic">hacer algo distinto</em>.
+        </p>
+
+        <ul className="mt-10 flex flex-col items-center gap-2 text-[color:var(--cream)]/85 text-lg">
+          <li>Ordenar tu negocio</li>
+          <li>Construir con dirección</li>
+          <li>Avanzar con claridad</li>
+        </ul>
+
+        <h2 className="mt-14 font-display text-4xl md:text-6xl text-[color:var(--cream)] leading-[1] text-balance">
+          Porque crecer no es <em className="italic">hacer más</em>.
+          <br />
+          Es saber <span className="gradient-text">hacia dónde estás yendo</span> y construir en coherencia con eso.
+        </h2>
+
+        <p className="mt-10 text-[color:var(--cream)]/70 leading-relaxed">
+          Si sentís que es momento, escribime por WhatsApp y vemos juntas si este proceso es para vos.
+        </p>
+
+        <div className="mt-10">
           <a
             href={WHATSAPP}
             target="_blank"
