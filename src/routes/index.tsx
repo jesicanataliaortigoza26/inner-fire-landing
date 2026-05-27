@@ -149,7 +149,7 @@ function VideoIntro() {
 
 function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-20 pb-20 md:pt-24 md:pb-28">
+    <section id="top" className="relative overflow-hidden pt-16 pb-20 md:pt-20 md:pb-28">
       <div className="absolute inset-0 -z-10">
         <img
           src={heroImg}
@@ -161,28 +161,28 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
       </div>
 
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-4xl px-6 text-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-background/60 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-[0.18em] text-foreground/70 reveal">
           <Compass className="h-3.5 w-3.5" /> Mentoría 1:1 · Método Brújula Expansiva™
         </div>
 
-        <h1 className="mt-8 font-display text-5xl md:text-7xl lg:text-8xl font-semibold leading-[0.95] tracking-tight text-balance reveal" style={{ animationDelay: "0.1s" }}>
+        <h1 className="mt-8 font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] tracking-tight text-balance reveal" style={{ animationDelay: "0.1s" }}>
           Construí un negocio con <span className="gradient-text italic">dirección</span>, claridad y coherencia.
         </h1>
 
-        <p className="mt-8 max-w-2xl text-lg md:text-xl text-foreground/70 text-pretty leading-relaxed reveal" style={{ animationDelay: "0.2s" }}>
+        <p className="mt-6 mx-auto max-w-2xl text-base md:text-lg text-foreground/70 text-pretty leading-relaxed reveal" style={{ animationDelay: "0.2s" }}>
           Un proceso estratégico de 6 semanas para ordenar, posicionar y construir un sistema real de ventas.
           No es teoría. Es decisión, estructura e implementación real.
         </p>
 
-        <div className="mt-12 flex flex-wrap items-center gap-4 reveal" style={{ animationDelay: "0.3s" }}>
+        <div className="mt-10 flex flex-wrap justify-center items-center gap-4 reveal" style={{ animationDelay: "0.3s" }}>
           <CtaButton>Agendar conversación</CtaButton>
           <a href="#proceso" className="text-sm font-medium text-foreground/70 hover:text-foreground transition px-2">
             Ver el proceso ↓
           </a>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-foreground/10 pt-10 reveal" style={{ animationDelay: "0.4s" }}>
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-foreground/10 pt-10 reveal" style={{ animationDelay: "0.4s" }}>
           {[
             ["6", "semanas de proceso"],
             ["6", "sesiones 1:1"],
