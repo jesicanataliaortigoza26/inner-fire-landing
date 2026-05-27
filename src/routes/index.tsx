@@ -660,19 +660,37 @@ function Faq() {
 
 function Cierre() {
   return (
-    <section className="relative overflow-hidden surface-dark py-32 md:py-44 noise">
-      <div className="relative mx-auto max-w-5xl px-6 text-center">
+    <section className="relative overflow-hidden surface-dark py-24 md:py-32 noise">
+      <div className="relative mx-auto max-w-4xl px-6 text-center">
         <Rocket className="h-8 w-8 mx-auto text-[color:var(--magenta)] mb-8" />
-        <h2 className="font-display text-5xl md:text-7xl lg:text-8xl text-[color:var(--cream)] leading-[0.95] text-balance">
-          Crecer no es <em className="italic">hacer más</em>.
+        <p className="font-display text-2xl md:text-3xl text-[color:var(--cream)]/85 leading-snug">
+          Podés seguir haciendo.
           <br />
-          Es saber <span className="gradient-text">hacia dónde</span>.
-        </h2>
-        <p className="mt-10 max-w-2xl mx-auto text-[color:var(--cream)]/70 text-lg leading-relaxed">
-          Si sentís que es el momento de ordenar tu negocio y avanzar con claridad,
-          escribime por WhatsApp y vemos si este proceso es para vos.
+          Podés seguir probando.
+          <br />
+          Podés seguir ajustando…
         </p>
-        <div className="mt-12">
+        <p className="mt-8 font-display text-2xl md:text-3xl text-[color:var(--cream)] leading-snug">
+          O podés decidir <em className="italic">hacer algo distinto</em>.
+        </p>
+
+        <ul className="mt-10 flex flex-col items-center gap-2 text-[color:var(--cream)]/85 text-lg">
+          <li>Ordenar tu negocio</li>
+          <li>Construir con dirección</li>
+          <li>Avanzar con claridad</li>
+        </ul>
+
+        <h2 className="mt-14 font-display text-4xl md:text-6xl text-[color:var(--cream)] leading-[1] text-balance">
+          Porque crecer no es <em className="italic">hacer más</em>.
+          <br />
+          Es saber <span className="gradient-text">hacia dónde estás yendo</span> y construir en coherencia con eso.
+        </h2>
+
+        <p className="mt-10 text-[color:var(--cream)]/70 leading-relaxed">
+          Si sentís que es momento, escribime por WhatsApp y vemos juntas si este proceso es para vos.
+        </p>
+
+        <div className="mt-10">
           <a
             href={WHATSAPP}
             target="_blank"
