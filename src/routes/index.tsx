@@ -144,7 +144,7 @@ function VideoIntro() {
 
 function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32">
+    <section id="top" className="relative overflow-hidden pt-20 pb-20 md:pt-24 md:pb-28">
       <div className="absolute inset-0 -z-10">
         <img
           src={heroImg}
