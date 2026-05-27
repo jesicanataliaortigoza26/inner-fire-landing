@@ -78,13 +78,18 @@ function VideoIntro() {
   return (
     <section className="pt-28 md:pt-36 pb-6">
       <div className="mx-auto max-w-5xl px-6">
-        <div className="text-center mb-8">
+        <div className="text-center mb-10 max-w-3xl mx-auto">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-3">
-            Mirá esto antes de seguir
+            Mentoría 1:1 · Método Brújula Expansiva™
           </div>
-          <h2 className="font-display text-3xl md:text-4xl leading-tight">
-            Te presento el proceso en <em className="italic gradient-text">2 minutos</em>
+          <h2 className="font-display text-3xl md:text-5xl leading-tight">
+            Un nuevo capítulo en tu negocio.
+            <br className="hidden md:block" />{" "}
+            <em className="italic gradient-text">Claridad, dirección y un sistema real de ventas.</em>
           </h2>
+          <p className="mt-5 text-foreground/60 text-lg max-w-xl mx-auto">
+            Te cuento en dos minutos cómo funciona este proceso, quién lo hace y qué podés lograr.
+          </p>
         </div>
 
         <div className="relative rounded-3xl overflow-hidden border border-foreground/10 shadow-[0_24px_80px_-24px_rgba(5,54,94,0.35)] aspect-video bg-[oklch(0.18_0.04_245)]">
