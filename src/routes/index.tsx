@@ -9,8 +9,6 @@ import {
   Map,
   Layers,
   Rocket,
-  Plus,
-  Minus,
   Quote,
   Play,
 } from "lucide-react";
