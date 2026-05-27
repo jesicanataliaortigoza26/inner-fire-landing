@@ -642,13 +642,11 @@ function Faq() {
                     {isOpen ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
                   </span>
                 </button>
-                <div
-                  className={`overflow-hidden transition-all duration-500 ease-out ${
-                    isOpen ? "max-h-[40rem] pb-6" : "max-h-0"
-                  }`}
-                >
-                  <p className="text-foreground/70 leading-relaxed max-w-3xl">{it.a}</p>
-                </div>
+                {isOpen && (
+                  <div className="pb-6">
+                    <p className="text-foreground/70 leading-relaxed max-w-3xl">{it.a}</p>
+                  </div>
+                )}
               </div>
             );
           })}
