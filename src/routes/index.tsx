@@ -186,7 +186,7 @@ function Hero() {
           {[
             ["6", "semanas de proceso"],
             ["6", "sesiones 1:1"],
-            ["4", "fases estructuradas"],
+            ["5", "fases estructuradas"],
             ["2", "versiones: Basic & VIP"],
           ].map(([n, l]) => (
             <div key={l}>
@@ -317,25 +317,53 @@ function Proceso() {
       n: "01",
       icon: Sparkles,
       title: "Reconfiguración interna",
-      desc: "Trabajamos tu mentalidad, visión y forma de liderar para sostener el negocio que querés construir. La base de todo lo que viene.",
+      body: [
+        "Acá es donde todo empieza a cambiar.",
+        "Porque no solo incorporás nuevas herramientas, sino que empezás a ver tu negocio desde otro lugar.",
+        "Trabajamos sobre tu mentalidad, tu visión y tu forma de liderar, para que puedas sostener el negocio que querés construir.",
+      ],
+      cta: "Es la base de todo lo que viene después.",
     },
     {
       n: "02",
       icon: Target,
-      title: "Dirección & modelo de negocio",
-      desc: "Validamos tu modelo, definimos enfoque y prioridades reales. Dejás de tener ideas sueltas y empezás a decidir con claridad.",
+      title: "Dirección",
+      body: [
+        "Dejás de tener ideas sueltas.",
+        "Y empezás a tomar decisiones con claridad.",
+        "Definimos tu modelo de negocio, tu enfoque y cómo querés crecer.",
+      ],
+      cta: "Pasás de hacer un poco de todo a construir con intención.",
     },
     {
       n: "03",
       icon: Map,
       title: "Posicionamiento",
-      desc: "Propuesta de valor, mensaje y diferenciación. Coherencia entre lo que ofrecés y lo que comunicás.",
+      body: [
+        "Tu negocio empieza a tomar forma.",
+        "Clarificás a quién le hablás, qué ofrecés y cómo lo comunicás.",
+      ],
+      cta: "Tu mensaje deja de ser general y empieza a ser claro, directo y alineado a tu valor.",
     },
     {
       n: "04",
       icon: Layers,
-      title: "Sistema de ventas",
-      desc: "Construimos las piezas clave: contenido, canal, mensaje y oferta dentro de un sistema sostenible.",
+      title: "Sistema",
+      body: [
+        "Acá aterrizamos todo a tierra.",
+        "Diseñamos cómo vas a vender: canales, estructura, proceso.",
+      ],
+      cta: "Dejás de improvisar y empezás a tener un sistema.",
+    },
+    {
+      n: "05",
+      icon: Rocket,
+      title: "Implementación",
+      body: [
+        "Todo lo anterior se convierte en acción.",
+        "Definís tu estrategia de contenido, tu comunicación y tu plan.",
+      ],
+      cta: "Acá es donde tu negocio deja de ser idea y empieza a funcionar en la práctica.",
     },
   ];
   return (
@@ -344,25 +372,30 @@ function Proceso() {
         <div className="max-w-2xl">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--cream)]/60 mb-4">El proceso</div>
           <h2 className="font-display text-4xl md:text-6xl text-[color:var(--cream)] leading-tight">
-            Cuatro fases. Una <span className="italic text-[color:var(--magenta)]">brújula</span>.
+            Cinco fases. Una <span className="italic text-[color:var(--magenta)]">brújula</span>.
           </h2>
           <p className="mt-6 text-[color:var(--cream)]/70 text-lg leading-relaxed">
-            Contenido pregrabado + implementación + sesiones estratégicas. Una regla: no hay sesión sin implementación previa.
+            Este proceso combina contenido pregrabado + implementación + sesiones estratégicas.
           </p>
         </div>
 
         <div className="mt-20 grid md:grid-cols-2 gap-px bg-[color:var(--cream)]/10 rounded-3xl overflow-hidden">
-          {fases.map(({ n, icon: Icon, title, desc }) => (
+          {fases.map(({ n, icon: Icon, title, body, cta }, idx) => (
             <div
               key={n}
-              className="group bg-[oklch(0.18_0.04_245)] p-10 md:p-12 hover:bg-[oklch(0.22_0.05_245)] transition-colors duration-500"
+              className={`group bg-[oklch(0.18_0.04_245)] p-10 md:p-12 hover:bg-[oklch(0.22_0.05_245)] transition-colors duration-500 ${idx === 4 ? "md:col-span-2" : ""}`}
             >
               <div className="flex items-start justify-between mb-8">
                 <span className="font-display text-sm text-[color:var(--cream)]/40 tabular-nums">Fase {n}</span>
                 <Icon className="h-5 w-5 text-[color:var(--verde)] group-hover:rotate-12 transition-transform duration-500" />
               </div>
               <h3 className="font-display text-2xl md:text-3xl text-[color:var(--cream)] mb-4">{title}</h3>
-              <p className="text-[color:var(--cream)]/65 leading-relaxed">{desc}</p>
+              <div className="space-y-3">
+                {body.map((p, i) => (
+                  <p key={i} className="text-[color:var(--cream)]/65 leading-relaxed">{p}</p>
+                ))}
+              </div>
+              <p className="mt-4 text-[color:var(--verde)] font-medium">{cta}</p>
             </div>
           ))}
         </div>
