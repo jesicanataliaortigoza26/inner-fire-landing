@@ -406,30 +406,31 @@ function Proceso() {
 
 function Versiones() {
   const basic = [
-    "6 sesiones estratégicas 1:1",
-    "Acceso a contenido pregrabado por fases",
-    "Ejercicios aplicados con devolución",
-    "Roadmap completo del proceso",
-    "Soporte durante las 6 semanas",
-    "Documentos guía y plantillas",
+    "Mentoría completa 1:1",
+    "6 sesiones estratégicas",
+    "Plataforma + roadmap del proceso",
+    "Contenido pregrabado por fases",
+    "Sistema de negocio",
+    "Estrategia de contenidos",
+    "Plan de acción",
+    "Sistema de comunicación",
   ];
-  const vip = [
-    "Todo lo incluido en la versión Basic",
-    "Desarrollo de marca completo (agencia)",
-    "Identidad visual + aplicaciones de marca",
-    "Optimización de hasta 3 perfiles sociales",
+  const vipExtra = [
+    "Desarrollo de marca",
+    "Estrategia + contenido",
     "12 piezas diseñadas para redes sociales",
-    "Brújula de Comunicación™ (pilares + mensajes)",
-    "Presentación de negocio en PDF lista para enviar",
-    "Sesiones extra de validación y activación",
+    "Presentación de negocio",
+    "Brújula de Comunicación™",
+    "Roadmap de ventas",
   ];
+  const vip = [...basic, ...vipExtra];
 
   return (
     <section id="versiones" className="py-28 md:py-40">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Dos versiones</div>
-          <h2 className="font-display text-4xl md:text-6xl leading-tight">
+          <div className="text-sm uppercase tracking-[0.22em] text-[color:var(--magenta)] mb-5">Dos versiones</div>
+          <h2 className="font-display text-3xl md:text-5xl leading-tight whitespace-nowrap">
             Elegí cómo querés <em className="italic gradient-text">construir</em>.
           </h2>
           <p className="mt-6 text-foreground/70 text-lg">
@@ -437,7 +438,7 @@ function Versiones() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 items-stretch">
           {/* Basic */}
           <article className="relative rounded-3xl border border-foreground/10 bg-card p-10 md:p-12 flex flex-col">
             <div className="flex items-baseline justify-between">
@@ -446,7 +447,12 @@ function Versiones() {
             </div>
             <p className="mt-3 text-foreground/65">El proceso completo de Brújula Expansiva, paso a paso.</p>
 
-            <ul className="mt-10 space-y-4 flex-1">
+            <div className="mt-6 pb-6 border-b border-foreground/10">
+              <div className="font-display text-4xl text-foreground">USD 700</div>
+              <div className="mt-1 text-sm text-foreground/55">o ARS $700.000</div>
+            </div>
+
+            <ul className="mt-8 space-y-4 flex-1">
               {basic.map((f) => (
                 <li key={f} className="flex items-start gap-3 text-sm">
                   <Check className="h-4 w-4 mt-1 text-[color:var(--verde)] shrink-0" />
@@ -471,18 +477,23 @@ function Versiones() {
             <div className="absolute top-6 right-6 inline-flex items-center gap-1.5 rounded-full bg-[color:var(--cream)]/15 backdrop-blur px-3 py-1 text-[10px] uppercase tracking-[0.18em]">
               <Sparkles className="h-3 w-3" /> Recomendado
             </div>
-            <div className="relative">
+            <div className="relative flex flex-col flex-1">
               <div className="flex items-baseline justify-between">
                 <h3 className="font-display text-3xl">VIP</h3>
                 <span className="text-xs uppercase tracking-wider text-[color:var(--cream)]/70">Done-with-you</span>
               </div>
               <p className="mt-3 text-[color:var(--cream)]/85">Mentoría + implementación: salís con todo armado y listo para vender.</p>
 
-              <ul className="mt-10 space-y-4 flex-1">
-                {vip.map((f) => (
+              <div className="mt-6 pb-6 border-b border-[color:var(--cream)]/20">
+                <div className="font-display text-4xl text-[color:var(--cream)]">USD 1.300</div>
+                <div className="mt-1 text-sm text-[color:var(--cream)]/75">o ARS $1.300.000</div>
+              </div>
+
+              <ul className="mt-8 space-y-4 flex-1">
+                {vip.map((f, i) => (
                   <li key={f} className="flex items-start gap-3 text-sm">
-                    <Check className="h-4 w-4 mt-1 text-[color:var(--cream)] shrink-0" />
-                    <span className="text-[color:var(--cream)]/95">{f}</span>
+                    <Check className={`h-4 w-4 mt-1 shrink-0 ${i >= basic.length ? "text-[color:var(--cream)]" : "text-[color:var(--cream)]/70"}`} />
+                    <span className={`${i >= basic.length ? "text-[color:var(--cream)] font-medium" : "text-[color:var(--cream)]/90"}`}>{f}</span>
                   </li>
                 ))}
               </ul>
@@ -491,7 +502,7 @@ function Versiones() {
                 href={WHATSAPP}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group mt-10 inline-flex items-center gap-2 rounded-full bg-[color:var(--cream)] text-foreground px-6 py-3.5 text-sm font-medium transition-all hover:bg-background hover:shadow-[0_12px_40px_-12px_oklch(0_0_0/0.4)]"
+                className="group mt-10 self-start inline-flex items-center gap-2 rounded-full bg-[color:var(--cream)] text-foreground px-6 py-3.5 text-sm font-medium transition-all hover:bg-background hover:shadow-[0_12px_40px_-12px_oklch(0_0_0/0.4)]"
               >
                 Aplicar a VIP
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -501,7 +512,7 @@ function Versiones() {
         </div>
 
         <p className="mt-10 text-center text-sm text-foreground/55">
-          Valores actualizados en la conversación inicial por WhatsApp · Cupo limitado por mes
+          Cupo limitado por mes · Valores definitivos confirmados en la conversación inicial por WhatsApp
         </p>
       </div>
     </section>
