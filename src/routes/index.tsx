@@ -290,13 +290,13 @@ function SobreMi() {
               Creé un método para personas que ya tienen un negocio funcionando y necesitan ordenar, decidir y avanzar con dirección real.
             </p>
             <p>
-              Mi voz no impone, eleva. No sobreprotege, sostiene. Trabajo con elegancia, presencia y un toque de chispa: la claridad como acto de liderazgo.
+              Mi voz no impone, eleva. No sobreprotege, sostiene. Trabajo con presencia y un toque de chispa: la claridad como acto de liderazgo.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
             {[
-              ["+10", "años acompañando"],
-              ["100+", "procesos 1:1"],
+              ["+6", "años acompañando"],
+              ["+50", "procesos 1:1"],
               ["1", "método propio"],
             ].map(([n, l]) => (
               <div key={l}>
