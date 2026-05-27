@@ -576,7 +576,26 @@ function Testimonios() {
   );
 }
 
-function Faq() {
+
+function LlamadoIntermedio() {
+  return (
+    <section className="py-20 md:py-28">
+      <div className="mx-auto max-w-3xl px-6 text-center">
+        <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Tu próximo paso</div>
+        <h2 className="font-display text-3xl md:text-4xl leading-tight text-balance">
+          Si algo de todo esto te resonó, <em className="italic gradient-text">conversemos</em>.
+        </h2>
+        <p className="mt-5 text-foreground/70 leading-relaxed">
+          Una charla inicial por WhatsApp para ver si Brújula Expansiva es lo que tu negocio necesita ahora.
+        </p>
+        <div className="mt-8 flex justify-center">
+          <CtaButton>Agendar conversación</CtaButton>
+        </div>
+      </div>
+    </section>
+  );
+}
+
   const items = [
     {
       q: "¿Necesito tener todo claro antes de empezar?",
