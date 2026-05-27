@@ -546,7 +546,7 @@ function Testimonios() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-2xl mb-16">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Resultados reales</div>
-          <h2 className="font-display text-4xl md:text-5xl leading-tight">
+          <h2 className="font-display text-3xl md:text-4xl leading-tight md:whitespace-nowrap">
             No son frases. Son <em className="italic">decisiones tomadas</em>.
           </h2>
         </div>
