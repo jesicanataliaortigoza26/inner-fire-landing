@@ -633,6 +633,7 @@ function Landing() {
   return (
     <main className="bg-background text-foreground">
       <Nav />
+      <VideoIntro />
       <Hero />
       <Marquee />
       <Imagina />
