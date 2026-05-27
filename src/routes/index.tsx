@@ -9,8 +9,6 @@ import {
   Map,
   Layers,
   Rocket,
-  Plus,
-  Minus,
   Quote,
   Play,
 } from "lucide-react";
@@ -618,7 +616,6 @@ function Faq() {
       a: "No. Está pensado para personas que ya tienen un negocio funcionando y quieren ordenar, estructurar y escalar.",
     },
   ];
-  const [open, setOpen] = useState<number | null>(0);
   return (
     <section id="faq" className="py-14 md:py-20">
       <div className="mx-auto max-w-4xl px-6">
@@ -626,30 +623,25 @@ function Faq() {
         <h2 className="font-display text-3xl md:text-4xl leading-tight mb-10">
           Lo que quizás te estás preguntando.
         </h2>
-        <div className="divide-y divide-foreground/10 border-y border-foreground/10">
-          {items.map((it, i) => {
-            const isOpen = open === i;
-            return (
-              <div key={i}>
-                <button
-                  onClick={() => setOpen(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between gap-6 py-6 text-left group"
-                >
-                  <span className="font-display text-lg md:text-xl text-foreground group-hover:text-[color:var(--verde)] transition-colors">
-                    {it.q}
-                  </span>
-                  <span className="shrink-0 h-9 w-9 rounded-full border border-foreground/15 flex items-center justify-center group-hover:border-[color:var(--verde)] group-hover:bg-[color:var(--verde)] group-hover:text-background transition-all">
-                    {isOpen ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
-                  </span>
-                </button>
-                {isOpen && (
-                  <div className="pb-6">
-                    <p className="text-foreground/70 leading-relaxed max-w-3xl">{it.a}</p>
-                  </div>
-                )}
+        <div className="grid gap-4">
+          {items.map((it, i) => (
+            <article
+              key={it.q}
+              className="rounded-2xl border border-foreground/10 bg-[oklch(0.98_0.008_80)] p-6 md:p-7"
+            >
+              <div className="mb-4 flex items-start gap-4">
+                <span className="mt-1 font-display text-sm tabular-nums text-[color:var(--verde)]">
+                  0{i + 1}
+                </span>
+                <h3 className="font-display text-lg md:text-xl leading-snug text-foreground">
+                  {it.q}
+                </h3>
               </div>
-            );
-          })}
+              <p className="pl-9 text-foreground/70 leading-relaxed">
+                {it.a}
+              </p>
+            </article>
+          ))}
         </div>
       </div>
     </section>
