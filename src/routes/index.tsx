@@ -186,7 +186,7 @@ function Hero() {
           {[
             ["6", "semanas de proceso"],
             ["6", "sesiones 1:1"],
-            ["4", "fases estructuradas"],
+            ["5", "fases estructuradas"],
             ["2", "versiones: Basic & VIP"],
           ].map(([n, l]) => (
             <div key={l}>
