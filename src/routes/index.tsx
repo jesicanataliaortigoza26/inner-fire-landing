@@ -149,7 +149,7 @@ function VideoIntro() {
 
 function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-20 pb-20 md:pt-24 md:pb-28">
+    <section id="top" className="relative overflow-hidden pt-16 pb-20 md:pt-20 md:pb-28">
       <div className="absolute inset-0 -z-10">
         <img
           src={heroImg}
@@ -161,28 +161,28 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
       </div>
 
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-4xl px-6 text-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-foreground/10 bg-background/60 backdrop-blur px-4 py-1.5 text-xs uppercase tracking-[0.18em] text-foreground/70 reveal">
           <Compass className="h-3.5 w-3.5" /> Mentoría 1:1 · Método Brújula Expansiva™
         </div>
 
-        <h1 className="mt-8 font-display text-5xl md:text-7xl lg:text-8xl font-semibold leading-[0.95] tracking-tight text-balance reveal" style={{ animationDelay: "0.1s" }}>
+        <h1 className="mt-8 font-display text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] tracking-tight text-balance reveal" style={{ animationDelay: "0.1s" }}>
           Construí un negocio con <span className="gradient-text italic">dirección</span>, claridad y coherencia.
         </h1>
 
-        <p className="mt-8 max-w-2xl text-lg md:text-xl text-foreground/70 text-pretty leading-relaxed reveal" style={{ animationDelay: "0.2s" }}>
+        <p className="mt-6 mx-auto max-w-2xl text-base md:text-lg text-foreground/70 text-pretty leading-relaxed reveal" style={{ animationDelay: "0.2s" }}>
           Un proceso estratégico de 6 semanas para ordenar, posicionar y construir un sistema real de ventas.
           No es teoría. Es decisión, estructura e implementación real.
         </p>
 
-        <div className="mt-12 flex flex-wrap items-center gap-4 reveal" style={{ animationDelay: "0.3s" }}>
+        <div className="mt-10 flex flex-wrap justify-center items-center gap-4 reveal" style={{ animationDelay: "0.3s" }}>
           <CtaButton>Agendar conversación</CtaButton>
           <a href="#proceso" className="text-sm font-medium text-foreground/70 hover:text-foreground transition px-2">
             Ver el proceso ↓
           </a>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-foreground/10 pt-10 reveal" style={{ animationDelay: "0.4s" }}>
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-foreground/10 pt-10 reveal" style={{ animationDelay: "0.4s" }}>
           {[
             ["6", "semanas de proceso"],
             ["6", "sesiones 1:1"],
@@ -225,36 +225,41 @@ function Imagina() {
     "Un sistema real para vender que podés sostener en el tiempo.",
   ];
   return (
-    <section className="py-28 md:py-40">
-      <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-12 gap-12 items-start">
-        <div className="md:col-span-5 md:sticky md:top-28">
+    <section className="py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Imaginá este escenario</div>
-          <h2 className="font-display text-4xl md:text-5xl leading-tight">
+          <h2 className="font-display text-3xl md:text-4xl leading-tight">
             En las próximas semanas, todo empieza a tener <em className="italic text-[color:var(--verde)]">su lugar</em>.
           </h2>
-          <p className="mt-6 text-foreground/70 leading-relaxed">
+          <p className="mt-5 text-foreground/70 leading-relaxed">
             No desde la exigencia. No desde el hacer constante. Desde la claridad.
           </p>
-          <div className="mt-10 overflow-hidden rounded-2xl border border-foreground/10">
-            <img
-              src={workspaceImg}
-              alt="Espacio editorial: cuaderno con notas, brújula de bronce y café"
-              loading="lazy"
-              className="w-full h-full object-cover aspect-[3/4]"
-            />
-          </div>
         </div>
-        <ul className="md:col-span-7 space-y-1">
-          {items.map((t, i) => (
-            <li
-              key={i}
-              className="group flex items-start gap-5 border-t border-foreground/10 py-6 last:border-b transition-all hover:pl-2"
-            >
-              <span className="font-display text-sm text-foreground/40 mt-1.5 tabular-nums">0{i + 1}</span>
-              <p className="text-lg md:text-xl text-foreground/85 text-pretty leading-snug">{t}</p>
-            </li>
-          ))}
-        </ul>
+
+        <div className="grid md:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+          <div className="md:col-span-5">
+            <div className="h-full overflow-hidden rounded-2xl border border-foreground/10">
+              <img
+                src={workspaceImg}
+                alt="Espacio editorial: cuaderno con notas, brújula de bronce y café"
+                loading="lazy"
+                className="w-full h-full object-cover min-h-[420px]"
+              />
+            </div>
+          </div>
+          <ul className="md:col-span-7 flex flex-col justify-between">
+            {items.map((t, i) => (
+              <li
+                key={i}
+                className="group flex items-start gap-5 border-t border-foreground/10 py-5 first:border-t-0 first:pt-0 last:pb-0 transition-all hover:pl-2"
+              >
+                <span className="font-display text-sm text-foreground/40 mt-1.5 tabular-nums">0{i + 1}</span>
+                <p className="text-base md:text-lg text-foreground/85 text-pretty leading-snug">{t}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
