@@ -644,7 +644,7 @@ function Faq() {
                 </button>
                 <div
                   className={`overflow-hidden transition-all duration-500 ease-out ${
-                    isOpen ? "max-h-96 pb-6" : "max-h-0"
+                    isOpen ? "max-h-[40rem] pb-6" : "max-h-0"
                   }`}
                 >
                   <p className="text-foreground/70 leading-relaxed max-w-3xl">{it.a}</p>
