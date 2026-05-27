@@ -542,10 +542,10 @@ function Testimonios() {
   ];
 
   return (
-    <section id="testimonios" className="py-28 md:py-40 bg-[oklch(0.96_0.012_80)]">
+    <section id="testimonios" className="py-14 md:py-20 bg-[oklch(0.96_0.012_80)]">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="max-w-2xl mb-16">
-          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Resultados reales</div>
+        <div className="max-w-2xl mb-12">
+          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Ellos dicen</div>
           <h2 className="font-display text-3xl md:text-4xl leading-tight md:whitespace-nowrap">
             No son frases. Son <em className="italic">decisiones tomadas</em>.
           </h2>
