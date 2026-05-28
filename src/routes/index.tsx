@@ -86,7 +86,7 @@ function VideoIntro() {
             <em className="italic gradient-text">Claridad, dirección y un sistema real de ventas.</em>
           </h2>
           <p className="mt-5 text-foreground/60 text-lg max-w-xl mx-auto">
-            Te cuento en dos minutos cómo funciona este proceso, quién lo hace y qué podés lograr.
+            Te cuento en dos minutos cómo funciona este proceso y qué podés lograr.
           </p>
         </div>
 
@@ -174,7 +174,7 @@ function Hero() {
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center items-center gap-4 reveal" style={{ animationDelay: "0.3s" }}>
-          <CtaButton>Agendar conversación</CtaButton>
+          <CtaButton>Ver si es para vos</CtaButton>
           <a href="#proceso" className="text-sm font-medium text-foreground/70 hover:text-foreground transition px-2">
             Ver el proceso ↓
           </a>
@@ -184,8 +184,8 @@ function Hero() {
           {[
             ["6", "semanas de proceso"],
             ["6", "sesiones 1:1"],
-            ["5", "fases estructuradas"],
-            ["2", "versiones: Basic & VIP"],
+            ["5", "fases"],
+            ["2", "versiones"],
           ].map(([n, l]) => (
             <div key={l}>
               <div className="font-display text-4xl md:text-5xl text-[color:var(--verde)]">{n}</div>
@@ -281,14 +281,23 @@ function SobreMi() {
         <div className="md:col-span-7">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Sobre mí</div>
           <h2 className="font-display text-4xl md:text-5xl leading-tight">
-            Soy Jesica. <em className="italic gradient-text">Acompaño desde la claridad</em>, no desde el ruido.
+            Soy <em className="italic gradient-text">Jesica Ortigoza</em>.
           </h2>
-          <div className="mt-8 space-y-5 text-foreground/75 leading-relaxed text-lg">
+          <div className="mt-8 space-y-5 text-foreground/80 leading-relaxed text-lg">
             <p>
-              Creé un método para personas que ya tienen un negocio funcionando y necesitan ordenar, decidir y avanzar con dirección real.
+              Si hoy estás en un punto donde sentís que estás haciendo mucho, pero no necesariamente avanzando como te gustaría… <strong className="text-foreground">te entiendo.</strong> Porque yo también pasé por ahí.
             </p>
             <p>
-              Mi voz no impone, eleva. No sobreprotege, sostiene. Trabajo con presencia y un toque de chispa: la claridad como acto de liderazgo.
+              Durante mucho tiempo, mi negocio se sostenía en hacer. Más contenido. Más ideas. Más esfuerzo. Pero sin una estructura clara, todo dependía de mí. Y eso no escala ni se sostiene en el tiempo.
+            </p>
+            <p>
+              El cambio no vino cuando hice más. Vino cuando empecé a <em className="italic">ordenar</em>. A entender que un negocio no crece por lo que hacés, sino por cómo está construido.
+            </p>
+            <p>
+              Ahí empecé a integrar mentalidad, dirección, modelo de negocio, comunicación y sistema de ventas. No como partes sueltas, sino como un todo. Y eso es lo que hoy enseño.
+            </p>
+            <p>
+              Creé un método para personas que ya tienen un negocio funcionando y necesitan ordenar, decidir y avanzar con dirección. El Método Brújula Expansiva™ nace desde lo real, desde lo que funciona, desde lo que se puede sostener.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
@@ -365,32 +374,32 @@ function Proceso() {
     },
   ];
   return (
-    <section id="proceso" className="surface-dark relative py-28 md:py-40 noise">
+    <section id="proceso" className="relative py-24 md:py-32 bg-[oklch(0.96_0.012_80)]">
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="max-w-2xl">
-          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--cream)]/60 mb-4">El proceso</div>
-          <h2 className="font-display text-4xl md:text-6xl text-[color:var(--cream)] leading-tight">
-            Cinco fases. Una <span className="italic text-[color:var(--magenta)]">brújula</span>.
+          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">El proceso</div>
+          <h2 className="font-display text-4xl md:text-6xl text-foreground leading-tight">
+            Cinco fases. Una <span className="italic gradient-text">brújula</span>.
           </h2>
-          <p className="mt-6 text-[color:var(--cream)]/70 text-lg leading-relaxed">
+          <p className="mt-6 text-foreground/70 text-lg leading-relaxed">
             Este proceso combina contenido pregrabado + implementación + sesiones estratégicas.
           </p>
         </div>
 
-        <div className="mt-20 grid md:grid-cols-2 gap-px bg-[color:var(--cream)]/10 rounded-3xl overflow-hidden">
+        <div className="mt-16 grid md:grid-cols-2 gap-px bg-foreground/10 rounded-3xl overflow-hidden border border-foreground/10">
           {fases.map(({ n, icon: Icon, title, body, cta }, idx) => (
             <div
               key={n}
-              className={`group bg-[oklch(0.18_0.04_245)] p-10 md:p-12 hover:bg-[oklch(0.22_0.05_245)] transition-colors duration-500 ${idx === 4 ? "md:col-span-2" : ""}`}
+              className={`group bg-background p-10 md:p-12 hover:bg-[oklch(0.99_0.008_80)] transition-colors duration-500 ${idx === 4 ? "md:col-span-2" : ""}`}
             >
               <div className="flex items-start justify-between mb-8">
-                <span className="font-display text-sm text-[color:var(--cream)]/40 tabular-nums">Fase {n}</span>
-                <Icon className="h-5 w-5 text-[color:var(--verde)] group-hover:rotate-12 transition-transform duration-500" />
+                <span className="font-display text-sm text-foreground/40 tabular-nums">Fase {n}</span>
+                <Icon className="h-5 w-5 text-[color:var(--magenta)] group-hover:rotate-12 transition-transform duration-500" />
               </div>
-              <h3 className="font-display text-2xl md:text-3xl text-[color:var(--cream)] mb-4">{title}</h3>
+              <h3 className="font-display text-2xl md:text-3xl text-foreground mb-4">{title}</h3>
               <div className="space-y-3">
                 {body.map((p, i) => (
-                  <p key={i} className="text-[color:var(--cream)]/65 leading-relaxed">{p}</p>
+                  <p key={i} className="text-foreground/70 leading-relaxed">{p}</p>
                 ))}
               </div>
               <p className="mt-4 text-[color:var(--verde)] font-medium">{cta}</p>
@@ -650,43 +659,35 @@ function Faq() {
 
 function Cierre() {
   return (
-    <section className="relative overflow-hidden surface-dark py-24 md:py-32 noise">
-      <div className="relative mx-auto max-w-4xl px-6 text-center">
-        <Rocket className="h-8 w-8 mx-auto text-[color:var(--magenta)] mb-8" />
-        <p className="font-display text-2xl md:text-3xl text-[color:var(--cream)]/85 leading-snug">
-          Podés seguir haciendo.
-          <br />
-          Podés seguir probando.
-          <br />
-          Podés seguir ajustando…
+    <section className="relative overflow-hidden surface-dark py-16 md:py-24 noise">
+      <div className="relative mx-auto max-w-3xl px-6 text-center">
+        <Rocket className="h-6 w-6 mx-auto text-[color:var(--magenta)] mb-6" />
+        <p className="font-display text-lg md:text-xl text-[color:var(--cream)]/85 leading-snug">
+          Podés seguir haciendo. Podés seguir probando. Podés seguir ajustando…
         </p>
-        <p className="mt-8 font-display text-2xl md:text-3xl text-[color:var(--cream)] leading-snug">
+        <p className="mt-4 font-display text-xl md:text-2xl text-[color:var(--cream)] leading-snug">
           O podés decidir <em className="italic">hacer algo distinto</em>.
         </p>
 
-        <ul className="mt-10 flex flex-col items-center gap-2 text-[color:var(--cream)]/85 font-display text-2xl md:text-3xl leading-snug">
+        <ul className="mt-6 flex flex-col items-center gap-1 text-[color:var(--cream)]/85 font-display text-lg md:text-xl leading-snug">
           <li>Ordenar tu negocio</li>
           <li>Construir con dirección</li>
           <li>Avanzar con claridad</li>
         </ul>
 
-        <h2 className="mt-14 font-display text-2xl md:text-4xl text-[color:var(--cream)] leading-tight text-balance max-w-3xl mx-auto">
+        <h2 className="mt-10 font-display text-xl md:text-2xl text-[color:var(--cream)] leading-snug text-balance max-w-2xl mx-auto">
           Porque crecer no es <em className="italic">hacer más</em>. Es saber <span className="gradient-text">hacia dónde estás yendo</span> y construir en coherencia con eso.
         </h2>
 
-        <p className="mt-10 text-[color:var(--cream)]/70 leading-relaxed max-w-xl mx-auto">
-          Si sentís que es el momento de ordenar tu negocio y avanzar con dirección, escribime por WhatsApp y vemos juntas si este proceso es para vos.
-        </p>
-
-        <div className="mt-10">
+        <div className="mt-8">
           <a
             href={WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-full bg-[color:var(--cream)] text-foreground px-8 py-4 text-base font-medium transition-all hover:scale-[1.02] hover:shadow-[0_20px_60px_-15px_var(--magenta)]"
+            className="group inline-flex items-center gap-2 rounded-full bg-[color:var(--cream)] text-foreground px-7 py-3.5 text-sm font-medium transition-all hover:scale-[1.02] hover:shadow-[0_20px_60px_-15px_var(--magenta)]"
           >
             Conversemos en WhatsApp
-            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
         </div>
       </div>
