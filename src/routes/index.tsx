@@ -223,27 +223,27 @@ function Imagina() {
     "Un sistema real para vender que podés sostener en el tiempo.",
   ];
   return (
-    <section className="relative py-20 md:py-28 surface-dark overflow-hidden">
+    <section className="relative py-16 md:py-20 surface-dark overflow-hidden">
       <div className="noise" />
       <div className="relative mx-auto max-w-6xl px-6">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Imaginá este escenario</div>
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <div className="text-xs uppercase tracking-[0.25em] text-[color:oklch(0.85_0.12_350)] font-medium mb-4">Imaginá este escenario</div>
           <h2 className="font-display text-3xl md:text-4xl leading-tight text-[color:var(--cream)]">
-            En las próximas semanas, todo empieza a tener <em className="italic text-[color:oklch(0.78_0.12_165)]">su lugar</em>.
+            En las próximas semanas, todo empieza a tener <em className="italic text-[color:oklch(0.78_0.14_350)]">su lugar</em>.
           </h2>
           <p className="mt-5 text-[color:var(--cream)]/75 leading-relaxed">
             No desde la exigencia. No desde el hacer constante. Desde la claridad.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+        <div className="grid md:grid-cols-12 gap-8 lg:gap-10 items-start">
           <div className="md:col-span-5">
-            <div className="h-full overflow-hidden rounded-2xl border border-white/10">
+            <div className="overflow-hidden rounded-2xl border border-white/10">
               <img
                 src={workspaceImg}
                 alt="Espacio de trabajo con laptop, café y luz natural"
                 loading="lazy"
-                className="w-full h-full object-cover min-h-[360px]"
+                className="w-full h-auto object-cover aspect-[4/5]"
               />
             </div>
           </div>
@@ -266,7 +266,7 @@ function Imagina() {
 
 function SobreMi() {
   return (
-    <section id="sobre-mi" className="py-28 md:py-40 bg-[oklch(0.96_0.012_80)]">
+    <section id="sobre-mi" className="py-16 md:py-24 bg-[oklch(0.96_0.012_80)]">
       <div className="mx-auto max-w-6xl px-6 grid md:grid-cols-12 gap-12 lg:gap-16 items-center">
         <div className="md:col-span-5 relative">
           <div className="absolute -inset-4 bg-gradient-to-br from-[color:var(--verde)]/15 to-[color:var(--magenta)]/15 rounded-3xl blur-2xl -z-10" />
@@ -298,7 +298,7 @@ function SobreMi() {
               Ahí empecé a integrar mentalidad, dirección, modelo de negocio, comunicación y sistema de ventas. No como partes sueltas, sino como un todo. Y eso es lo que hoy enseño.
             </p>
             <p>
-              <strong className="text-foreground">Creé un método para personas que ya tienen un negocio funcionando, necesitan ordenar, decidir y avanzar con dirección.</strong> El Método Brújula Expansiva™ <strong className="text-foreground">nace desde mi experiencia y la de clientes, desde lo que funciona, desde lo que se puede sostener.</strong>
+              <strong className="text-foreground">Creé un método para personas que ya tienen un negocio funcionando, necesitan ordenar, decidir y avanzar con dirección.</strong> El <strong className="text-foreground">Método Brújula Expansiva™</strong> nace desde mi experiencia y la de clientes, desde lo que funciona, desde lo que se puede sostener.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
@@ -375,7 +375,7 @@ function Proceso() {
     },
   ];
   return (
-    <section id="proceso" className="relative py-24 md:py-32 bg-[oklch(0.96_0.012_80)]">
+    <section id="proceso" className="relative py-16 md:py-20 bg-[oklch(0.96_0.012_80)]">
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="max-w-2xl">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">El proceso</div>
@@ -550,12 +550,13 @@ function Testimonios() {
   ];
 
   return (
-    <section id="testimonios" className="py-14 md:py-20 bg-[oklch(0.96_0.012_80)]">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="testimonios" className="relative py-16 md:py-20 surface-dark overflow-hidden">
+      <div className="noise" />
+      <div className="relative mx-auto max-w-6xl px-6">
         <div className="max-w-2xl mb-12">
-          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Ellos dicen</div>
-          <h2 className="font-display text-3xl md:text-4xl leading-tight md:whitespace-nowrap">
-            No son frases. Son <em className="italic">decisiones tomadas</em>.
+          <div className="text-xs uppercase tracking-[0.25em] text-[color:oklch(0.85_0.12_350)] font-medium mb-4">Ellos dicen</div>
+          <h2 className="font-display text-3xl md:text-4xl leading-tight text-[color:var(--cream)] md:whitespace-nowrap">
+            No son frases. Son <em className="italic text-[color:oklch(0.78_0.14_350)]">decisiones tomadas</em>.
           </h2>
         </div>
 
@@ -563,18 +564,18 @@ function Testimonios() {
           {t.map((it) => (
             <figure
               key={it.name}
-              className="rounded-3xl bg-background border border-foreground/8 p-8 flex flex-col hover:border-foreground/20 hover:-translate-y-1 transition-all duration-500"
+              className="rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 p-8 flex flex-col hover:border-white/25 hover:-translate-y-1 transition-all duration-500"
             >
               <div className="flex items-center justify-between mb-6">
-                <span className="text-[10px] uppercase tracking-[0.22em] text-[color:var(--verde)] font-medium">{it.tag}</span>
-                <Quote className="h-5 w-5 text-foreground/15" />
+                <span className="text-[10px] uppercase tracking-[0.22em] text-[color:oklch(0.82_0.13_165)] font-medium">{it.tag}</span>
+                <Quote className="h-5 w-5 text-white/20" />
               </div>
-              <blockquote className="font-display text-xl leading-snug text-foreground/90 flex-1">
+              <blockquote className="font-display text-xl leading-snug text-[color:var(--cream)]/95 flex-1">
                 "{it.quote}"
               </blockquote>
-              <figcaption className="mt-8 pt-6 border-t border-foreground/8">
-                <div className="font-medium text-sm">{it.name}</div>
-                <div className="text-xs text-foreground/55 mt-0.5">{it.role}</div>
+              <figcaption className="mt-8 pt-6 border-t border-white/10">
+                <div className="font-medium text-sm text-[color:var(--cream)]">{it.name}</div>
+                <div className="text-xs text-[color:var(--cream)]/60 mt-0.5">{it.role}</div>
               </figcaption>
             </figure>
           ))}
