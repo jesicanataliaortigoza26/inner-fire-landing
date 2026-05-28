@@ -223,11 +223,11 @@ function Imagina() {
     "Un sistema real para vender que podés sostener en el tiempo.",
   ];
   return (
-    <section className="relative py-20 md:py-28 surface-dark overflow-hidden">
+    <section className="relative py-16 md:py-20 surface-dark overflow-hidden">
       <div className="noise" />
       <div className="relative mx-auto max-w-6xl px-6">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Imaginá este escenario</div>
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <div className="text-xs uppercase tracking-[0.25em] text-[color:oklch(0.85_0.12_350)] font-medium mb-4">Imaginá este escenario</div>
           <h2 className="font-display text-3xl md:text-4xl leading-tight text-[color:var(--cream)]">
             En las próximas semanas, todo empieza a tener <em className="italic text-[color:oklch(0.78_0.12_165)]">su lugar</em>.
           </h2>
@@ -236,14 +236,14 @@ function Imagina() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+        <div className="grid md:grid-cols-12 gap-8 lg:gap-10 items-start">
           <div className="md:col-span-5">
-            <div className="h-full overflow-hidden rounded-2xl border border-white/10">
+            <div className="overflow-hidden rounded-2xl border border-white/10">
               <img
                 src={workspaceImg}
                 alt="Espacio de trabajo con laptop, café y luz natural"
                 loading="lazy"
-                className="w-full h-full object-cover min-h-[360px]"
+                className="w-full h-auto object-cover aspect-[4/5]"
               />
             </div>
           </div>
