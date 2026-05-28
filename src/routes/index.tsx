@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import heroImg from "@/assets/hero-brujula.jpg";
 import portraitImg from "@/assets/jesica-portrait.jpeg";
-import workspaceImg from "@/assets/editorial-workspace.jpg";
+import workspaceImg from "@/assets/historia-brujula.png";
 import silkImg from "@/assets/silk-abstract.jpg";
 import videoThumb from "@/assets/video-thumbnail.jpg";
 
@@ -223,37 +223,38 @@ function Imagina() {
     "Un sistema real para vender que podés sostener en el tiempo.",
   ];
   return (
-    <section className="py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+    <section className="relative py-20 md:py-28 surface-dark overflow-hidden">
+      <div className="noise" />
+      <div className="relative mx-auto max-w-6xl px-6">
+        <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Imaginá este escenario</div>
-          <h2 className="font-display text-3xl md:text-4xl leading-tight">
-            En las próximas semanas, todo empieza a tener <em className="italic text-[color:var(--verde)]">su lugar</em>.
+          <h2 className="font-display text-3xl md:text-4xl leading-tight text-[color:var(--cream)]">
+            En las próximas semanas, todo empieza a tener <em className="italic text-[color:oklch(0.78_0.12_165)]">su lugar</em>.
           </h2>
-          <p className="mt-5 text-foreground/70 leading-relaxed">
+          <p className="mt-5 text-[color:var(--cream)]/75 leading-relaxed">
             No desde la exigencia. No desde el hacer constante. Desde la claridad.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+        <div className="grid md:grid-cols-12 gap-8 lg:gap-10 items-stretch">
           <div className="md:col-span-5">
-            <div className="h-full overflow-hidden rounded-2xl border border-foreground/10">
+            <div className="h-full overflow-hidden rounded-2xl border border-white/10">
               <img
                 src={workspaceImg}
-                alt="Espacio editorial: cuaderno con notas, brújula de bronce y café"
+                alt="Espacio de trabajo con laptop, café y luz natural"
                 loading="lazy"
-                className="w-full h-full object-cover min-h-[420px]"
+                className="w-full h-full object-cover min-h-[360px]"
               />
             </div>
           </div>
-          <ul className="md:col-span-7 flex flex-col justify-between">
+          <ul className="md:col-span-7 flex flex-col">
             {items.map((t, i) => (
               <li
                 key={i}
-                className="group flex items-start gap-5 border-t border-foreground/10 py-5 first:border-t-0 first:pt-0 last:pb-0 transition-all hover:pl-2"
+                className="group flex items-start gap-5 border-t border-white/10 py-3.5 first:border-t-0 first:pt-0 last:pb-0 transition-all hover:pl-2"
               >
-                <span className="font-display text-sm text-foreground/40 mt-1.5 tabular-nums">0{i + 1}</span>
-                <p className="text-base md:text-lg text-foreground/85 text-pretty leading-snug">{t}</p>
+                <span className="font-display text-sm text-[color:var(--cream)]/45 mt-1.5 tabular-nums">0{i + 1}</span>
+                <p className="text-base md:text-lg text-[color:var(--cream)]/90 text-pretty leading-snug">{t}</p>
               </li>
             ))}
           </ul>
@@ -285,19 +286,19 @@ function SobreMi() {
           </h2>
           <div className="mt-8 space-y-5 text-foreground/80 leading-relaxed text-lg">
             <p>
-              Si hoy estás en un punto donde sentís que estás haciendo mucho, pero no necesariamente avanzando como te gustaría… <strong className="text-foreground">te entiendo.</strong> Porque yo también pasé por ahí.
+              Si hoy estás en un punto donde sentís que estás haciendo mucho, pero no necesariamente avanzando como te gustaría… <strong className="text-foreground">te entiendo, porque yo también pasé por ahí.</strong>
             </p>
             <p>
               Durante mucho tiempo, mi negocio se sostenía en hacer. Más contenido. Más ideas. Más esfuerzo. Pero sin una estructura clara, todo dependía de mí. Y eso no escala ni se sostiene en el tiempo.
             </p>
             <p>
-              El cambio no vino cuando hice más. Vino cuando empecé a <em className="italic">ordenar</em>. A entender que un negocio no crece por lo que hacés, sino por cómo está construido.
+              <strong className="text-foreground">El cambio no vino cuando hice más. Vino cuando empecé a <em className="italic">ordenar</em>.</strong> A entender que un negocio no crece por lo que hacés, sino por cómo está construido.
             </p>
             <p>
               Ahí empecé a integrar mentalidad, dirección, modelo de negocio, comunicación y sistema de ventas. No como partes sueltas, sino como un todo. Y eso es lo que hoy enseño.
             </p>
             <p>
-              Creé un método para personas que ya tienen un negocio funcionando y necesitan ordenar, decidir y avanzar con dirección. El Método Brújula Expansiva™ nace desde lo real, desde lo que funciona, desde lo que se puede sostener.
+              <strong className="text-foreground">Creé un método para personas que ya tienen un negocio funcionando, necesitan ordenar, decidir y avanzar con dirección.</strong> El Método Brújula Expansiva™ <strong className="text-foreground">nace desde mi experiencia y la de clientes, desde lo que funciona, desde lo que se puede sostener.</strong>
             </p>
           </div>
           <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
