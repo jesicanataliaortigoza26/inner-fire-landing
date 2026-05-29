@@ -425,7 +425,7 @@ function Versiones() {
   const vipExtra = [
     "Desarrollo de marca",
     "Estrategia + contenido",
-    "12 piezas diseñadas para redes sociales",
+    "Piezas diseñadas para redes sociales",
     "Presentación de negocio",
     "Brújula de Comunicación™",
     "Roadmap de ventas",
@@ -519,7 +519,7 @@ function Versiones() {
         </div>
 
         <p className="mt-10 text-center text-sm text-foreground/55">
-          Cupo limitado por mes · Valores definitivos confirmados en la conversación inicial por WhatsApp
+          Cupos limitados por mes · Aplicá a la versión que tu negocio requiera en este momento
         </p>
       </div>
     </section>
