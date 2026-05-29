@@ -181,7 +181,7 @@ function Hero() {
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-foreground/10 pt-10 reveal" style={{ animationDelay: "0.4s" }}>
           {[
-            ["6", "semanas de proceso"],
+            ["6", "semanas"],
             ["6", "sesiones 1:1"],
             ["5", "fases"],
             ["2", "versiones"],
