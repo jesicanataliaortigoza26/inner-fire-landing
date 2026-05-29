@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import heroImg from "@/assets/hero-brujula.jpg";
 import portraitImg from "@/assets/jesica-portrait.jpeg";
-import workspaceImg from "@/assets/historia-brujula.png";
+import workspaceImg from "@/assets/brujula-escritorio.png";
 import silkImg from "@/assets/silk-abstract.jpg";
 import videoThumb from "@/assets/video-thumbnail.jpg";
 
@@ -235,14 +235,14 @@ function Imagina() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-12 gap-8 lg:gap-10 items-start">
+        <div className="grid md:grid-cols-12 gap-8 lg:gap-10 items-center">
           <div className="md:col-span-5">
             <div className="overflow-hidden rounded-2xl border border-white/10">
               <img
                 src={workspaceImg}
-                alt="Espacio de trabajo con laptop, café y luz natural"
+                alt="Escritorio con laptop, brújula dorada y luz natural"
                 loading="lazy"
-                className="w-full h-auto object-cover aspect-[4/5]"
+                className="w-full h-auto object-cover aspect-[3/4]"
               />
             </div>
           </div>
