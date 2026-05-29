@@ -84,9 +84,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Mentoría estratégica 1:1 para ordenar, posicionar y escalar tu negocio con dirección. Método Brújula Expansiva™ — versiones Basic y VIP." },
       { name: "author", content: "Jesica Ortigoza" },
       { property: "og:title", content: "Brújula Expansiva 1:1 — Mentoría con Jesica Ortigoza" },
-      { property: "og:description", content: "Construí un negocio con dirección, claridad y coherencia. Mentoría 1:1 de 6 semanas." },
+      { property: "og:description", content: "Mentoría estratégica 1:1 para ordenar, posicionar y escalar tu negocio con dirección. Método Brújula Expansiva™ — versiones Basic y VIP." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Brújula Expansiva 1:1 — Mentoría con Jesica Ortigoza" },
+      { name: "twitter:description", content: "Mentoría estratégica 1:1 para ordenar, posicionar y escalar tu negocio con dirección. Método Brújula Expansiva™ — versiones Basic y VIP." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/edeb33ad-7ebb-4cd1-8ed5-ad1c5c6cbd82/id-preview-8b8f240f--a632b43b-3d61-467a-bb00-69acca0743c5.lovable.app-1780017385484.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/edeb33ad-7ebb-4cd1-8ed5-ad1c5c6cbd82/id-preview-8b8f240f--a632b43b-3d61-467a-bb00-69acca0743c5.lovable.app-1780017385484.png" },
     ],
     links: [
       {
