@@ -174,7 +174,6 @@ function Hero() {
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center items-center gap-4 reveal" style={{ animationDelay: "0.3s" }}>
-          <CtaButton>Ver si es para vos</CtaButton>
           <a href="#proceso" className="text-sm font-medium text-foreground/70 hover:text-foreground transition px-2">
             Ver el proceso ↓
           </a>
