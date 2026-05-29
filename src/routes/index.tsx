@@ -519,7 +519,7 @@ function Versiones() {
         </div>
 
         <p className="mt-10 text-center text-sm text-foreground/55">
-          Cupo limitado por mes · Valores definitivos confirmados en la conversación inicial por WhatsApp
+          Cupos limitados por mes · Aplicá a la versión que tu negocio requiera en este momento
         </p>
       </div>
     </section>
