@@ -425,7 +425,7 @@ function Versiones() {
   const vipExtra = [
     "Desarrollo de marca",
     "Estrategia + contenido",
-    "12 piezas diseñadas para redes sociales",
+    "Piezas diseñadas para redes sociales",
     "Presentación de negocio",
     "Brújula de Comunicación™",
     "Roadmap de ventas",
