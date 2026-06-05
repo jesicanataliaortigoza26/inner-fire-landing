@@ -71,7 +71,8 @@ function Nav() {
 }
 
 function VideoIntro() {
-  const [showOverlay, setShowOverlay] = useState(true);
+  const [playing, setPlaying] = useState(false);
+  const videoId = "0BJqPWF1q_c";
 
   return (
     <section className="pt-28 md:pt-36 pb-6">
@@ -91,53 +92,43 @@ function VideoIntro() {
         </div>
 
         <div className="relative rounded-3xl overflow-hidden border border-foreground/10 shadow-[0_24px_80px_-24px_rgba(5,54,94,0.35)] aspect-video bg-[oklch(0.18_0.04_245)]">
-          <img
-            src={videoThumb}
-            alt="Video introductorio de Brújula Expansiva"
-            loading="lazy"
-            className="absolute inset-0 w-full h-full object-cover opacity-80"
-            width={1280}
-            height={720}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/30" />
-
-          {showOverlay && (
-            <button
-              onClick={() => setShowOverlay(false)}
-              className="absolute inset-0 flex flex-col items-center justify-center group cursor-pointer"
-              aria-label="Reproducir video introductorio"
-            >
-              <div className="relative">
-                <div className="absolute inset-0 rounded-full bg-[color:var(--cream)] blur-xl opacity-20 group-hover:opacity-35 transition-opacity" />
-                <div className="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-[color:var(--cream)]/90 text-[oklch(0.18_0.04_245)] shadow-[0_12px_40px_-8px_rgba(0,0,0,0.4)] group-hover:scale-110 transition-transform duration-300">
-                  <Play className="h-8 w-8 md:h-10 md:w-10 ml-1" fill="currentColor" />
+          {!playing && (
+            <>
+              <img
+                src={videoThumb}
+                alt="Video introductorio de Brújula Expansiva"
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover opacity-80"
+                width={1280}
+                height={720}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/30" />
+              <button
+                onClick={() => setPlaying(true)}
+                className="absolute inset-0 flex flex-col items-center justify-center group cursor-pointer"
+                aria-label="Reproducir video introductorio"
+              >
+                <div className="relative">
+                  <div className="absolute inset-0 rounded-full bg-[color:var(--cream)] blur-xl opacity-20 group-hover:opacity-35 transition-opacity" />
+                  <div className="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-[color:var(--cream)]/90 text-[oklch(0.18_0.04_245)] shadow-[0_12px_40px_-8px_rgba(0,0,0,0.4)] group-hover:scale-110 transition-transform duration-300">
+                    <Play className="h-8 w-8 md:h-10 md:w-10 ml-1" fill="currentColor" />
+                  </div>
                 </div>
-              </div>
-              <p className="mt-6 text-sm md:text-base text-[color:var(--cream)]/90 font-medium tracking-wide">
-                Video introductorio · Próximamente
-              </p>
-              <p className="mt-2 text-xs text-[color:var(--cream)]/50">
-                Estamos preparando tu mensaje de bienvenida
-              </p>
-            </button>
+                <p className="mt-6 text-sm md:text-base text-[color:var(--cream)]/90 font-medium tracking-wide">
+                  Ver video introductorio
+                </p>
+              </button>
+            </>
           )}
 
-          {!showOverlay && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/80 backdrop-blur-sm">
-              <p className="font-display text-lg text-foreground/80 mb-2">
-                Tu video estará disponible muy pronto
-              </p>
-              <p className="text-sm text-foreground/50 mb-6 text-center max-w-sm px-6">
-                Mientras tanto, podés seguir explorando toda la información del proceso.
-              </p>
-              <button
-                onClick={() => setShowOverlay(true)}
-                className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-5 py-2.5 text-sm hover:bg-foreground hover:text-background transition-colors"
-              >
-                <Play className="h-4 w-4" />
-                Volver al poster
-              </button>
-            </div>
+          {playing && (
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
+              title="Video introductorio · Brújula Expansiva"
+              className="absolute inset-0 w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           )}
         </div>
       </div>
