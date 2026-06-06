@@ -87,7 +87,7 @@ function VideoIntro() {
             <em className="italic gradient-text">Claridad, dirección y un sistema real de ventas.</em>
           </h2>
           <p className="mt-5 text-foreground/60 text-lg max-w-xl mx-auto">
-            Te cuento en dos minutos cómo funciona este proceso y qué podés lograr.
+            Te cuento en el siguiente video cómo funciona este proceso y lo que podés lograr.
           </p>
         </div>
 
