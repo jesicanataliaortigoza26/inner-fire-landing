@@ -72,7 +72,7 @@ function Nav() {
 
 function VideoIntro() {
   const [playing, setPlaying] = useState(false);
-  const videoId = "0BJqPWF1q_c";
+  const videoId = "5SqoA3lTSbk";
 
   return (
     <section className="pt-28 md:pt-36 pb-6">
