@@ -270,7 +270,7 @@ function SobreMi() {
           </div>
         </div>
         <div className="md:col-span-7">
-          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">Sobre mí</div>
+          <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">¿Por qué puedo acompañarte en este proceso?</div>
           <h2 className="font-display text-4xl md:text-5xl leading-tight">
             Soy <em className="italic gradient-text">Jesica Ortigoza</em>.
           </h2>
@@ -365,7 +365,7 @@ function Proceso() {
     },
   ];
   return (
-    <section id="proceso" className="relative py-16 md:py-20 bg-[oklch(0.96_0.012_80)]">
+    <section id="proceso" className="relative py-16 md:py-20 bg-background border-t border-foreground/10">
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="max-w-2xl">
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-4">El proceso</div>
@@ -377,11 +377,11 @@ function Proceso() {
           </p>
         </div>
 
-        <div className="mt-16 grid md:grid-cols-2 gap-px bg-foreground/10 rounded-3xl overflow-hidden border border-foreground/10">
-          {fases.map(({ n, icon: Icon, title, body, cta }, idx) => (
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-px bg-foreground/10 rounded-3xl overflow-hidden border border-foreground/10">
+          {fases.map(({ n, icon: Icon, title, body, cta }) => (
             <div
               key={n}
-              className={`group bg-background p-10 md:p-12 hover:bg-[oklch(0.99_0.008_80)] transition-colors duration-500 ${idx === 4 ? "md:col-span-2" : ""}`}
+              className="group bg-background p-8 md:p-6 lg:p-5 hover:bg-[oklch(0.99_0.008_80)] transition-colors duration-500"
             >
               <div className="flex items-start justify-between mb-8">
                 <span className="font-display text-sm text-foreground/40 tabular-nums">Fase {n}</span>
