@@ -377,11 +377,11 @@ function Proceso() {
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-px bg-foreground/10 rounded-3xl overflow-hidden border border-foreground/10">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-px bg-foreground/10 rounded-3xl overflow-hidden border border-foreground/10">
           {fases.map(({ n, icon: Icon, title, body, cta }) => (
             <div
               key={n}
-              className="group bg-background p-8 md:p-6 lg:p-5 hover:bg-[oklch(0.99_0.008_80)] transition-colors duration-500"
+              className="group bg-background p-8 md:p-10 hover:bg-[oklch(0.99_0.008_80)] transition-colors duration-500"
             >
               <div className="flex items-start justify-between mb-8">
                 <span className="font-display text-sm text-foreground/40 tabular-nums">Fase {n}</span>
