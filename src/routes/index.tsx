@@ -416,13 +416,13 @@ function ParaQuien() {
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-center mb-12">
           <div className="text-sm uppercase tracking-[0.22em] text-[color:var(--magenta)] mb-5">Para quién es este proceso</div>
-          <h2 className="font-display text-3xl md:text-5xl leading-tight">
+          <h2 className="font-display text-3xl md:text-4xl leading-tight text-balance">
             Creado para acompañarte cuando tu negocio <em className="italic gradient-text">ya existe</em>,
             pero todavía no refleja todo lo que podría llegar a ser.
           </h2>
         </div>
 
-        <p className="text-center text-foreground/70 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-14">
+        <p className="text-center text-foreground/70 text-lg md:text-2xl leading-relaxed max-w-4xl mx-auto mb-14">
           Para que refleje, con claridad, estructura y coherencia, la etapa a la que estás lista para entrar.
         </p>
 
