@@ -416,13 +416,13 @@ function ParaQuien() {
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-center mb-12">
           <div className="text-sm uppercase tracking-[0.22em] text-[color:var(--magenta)] mb-5">Para quién es este proceso</div>
-          <h2 className="font-display text-3xl md:text-5xl leading-tight">
+          <h2 className="font-display text-3xl md:text-4xl leading-tight text-balance">
             Creado para acompañarte cuando tu negocio <em className="italic gradient-text">ya existe</em>,
             pero todavía no refleja todo lo que podría llegar a ser.
           </h2>
         </div>
 
-        <p className="text-center text-foreground/70 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-14">
+        <p className="text-center text-foreground/70 text-lg md:text-2xl leading-relaxed max-w-4xl mx-auto mb-14">
           Para que refleje, con claridad, estructura y coherencia, la etapa a la que estás lista para entrar.
         </p>
 
@@ -463,7 +463,7 @@ function ParaQuien() {
         </div>
 
         <div className="relative rounded-3xl p-8 md:p-10 text-center bg-gradient-to-br from-[color:var(--magenta)]/10 via-background to-[color:var(--magenta)]/5 border border-[color:var(--magenta)]/20">
-          <div className="text-sm uppercase tracking-[0.22em] text-[color:var(--magenta)] mb-4">Lo que pide de ti</div>
+          <div className="text-sm uppercase tracking-[0.22em] text-[color:var(--magenta)] mb-4">Lo que pide de vos</div>
           <p className="font-display text-xl md:text-3xl leading-snug text-foreground">
             Este proceso requiere <em className="italic gradient-text">apertura, compromiso y disposición</em> para mirar, decidir y construir con más claridad.
           </p>
