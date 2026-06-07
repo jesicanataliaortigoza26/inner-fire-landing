@@ -747,6 +747,7 @@ function Landing() {
       <Imagina />
       <SobreMi />
       <Proceso />
+      <ParaQuien />
       <Versiones />
       <Testimonios />
       <LlamadoIntermedio />
