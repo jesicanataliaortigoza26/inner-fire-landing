@@ -404,33 +404,68 @@ function Proceso() {
 }
 
 function ParaQuien() {
+  const senales = [
+    "Ya hiciste camino.",
+    "Ya validaste algo.",
+    "Ya invertiste, aprendiste, probaste y sostuviste.",
+    "Y aún así, sientes que hay algo que todavía no termina de acomodarse del todo.",
+  ];
+
   return (
-    <section id="para-quien" className="py-16 md:py-24 bg-[oklch(0.96_0.012_80)]">
+    <section id="para-quien" className="py-20 md:py-28 bg-[oklch(0.96_0.012_80)]">
       <div className="mx-auto max-w-4xl px-6">
-        <p className="text-lg md:text-xl leading-relaxed text-foreground/80 mb-10">
-          <strong className="text-foreground">
-            Brújula Expansiva 1:1 fue creado para acompañarte en ese momento en el que tu negocio ya existe, pero todavía no refleja con claridad, estructura y coherencia todo lo que podría llegar a ser.
-          </strong>
+        <div className="text-center mb-12">
+          <div className="text-sm uppercase tracking-[0.22em] text-[color:var(--magenta)] mb-5">Para quién es este proceso</div>
+          <h2 className="font-display text-3xl md:text-5xl leading-tight">
+            Creado para acompañarte cuando tu negocio <em className="italic gradient-text">ya existe</em>,
+            pero todavía no refleja todo lo que podría llegar a ser.
+          </h2>
+        </div>
+
+        <p className="text-center text-foreground/70 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-14">
+          Para que refleje, con claridad, estructura y coherencia, la etapa a la que estás lista para entrar.
         </p>
 
-        <div className="space-y-5 text-foreground/80 leading-relaxed text-lg">
-          <p>Es para vos si ya hiciste camino.</p>
-          <p>Si ya validaste algo.</p>
-          <p>Si ya invertiste, aprendiste, probaste y sostuviste.</p>
-          <p>Y, aún así, sientes que hay algo que todavía no termina de acomodarse del todo.</p>
-          <p>
-            No necesariamente porque te falten herramientas, sino porque hoy tu negocio necesita algo más profundo: dirección, foco, decisiones mejor alineadas y una estructura capaz de sostener el crecimiento que deseas con mayor madurez.
+        <div className="mb-14">
+          <p className="font-display text-xl md:text-2xl text-foreground mb-6 text-center">
+            Es para vos si…
           </p>
-          <p>
-            Brújula Expansiva 1:1 no está pensado para idear un negocio desde cero.
-          </p>
-          <p>
-            Está pensado para ordenar, fortalecer y expandir lo que ya existe, para que puedas construir desde una base más clara, más sólida y más representativa de la etapa a la que estás lista para entrar.
-          </p>
-          <p>
-            <strong className="text-foreground">
-              Este proceso requiere apertura, compromiso y disposición para mirar, decidir y construir con más claridad.
-            </strong>
+          <ul className="grid sm:grid-cols-2 gap-4">
+            {senales.map((item, i) => (
+              <li
+                key={i}
+                className="flex items-start gap-3 rounded-2xl border border-foreground/10 bg-background/60 backdrop-blur-sm p-5 shadow-sm"
+              >
+                <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[color:var(--magenta)]/10 text-[color:var(--magenta)]">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span className="text-foreground/80 leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-14">
+          <div className="rounded-2xl p-6 bg-background/60 border border-foreground/10">
+            <div className="text-xs uppercase tracking-[0.2em] text-foreground/50 mb-3">Lo que necesitas hoy</div>
+            <p className="text-foreground/80 leading-relaxed">
+              No necesariamente más herramientas, sino algo más profundo: <strong className="text-foreground">dirección, foco, decisiones mejor alineadas</strong> y una estructura capaz de sostener el crecimiento que deseas con mayor madurez.
+            </p>
+          </div>
+          <div className="rounded-2xl p-6 bg-background/60 border border-foreground/10">
+            <div className="text-xs uppercase tracking-[0.2em] text-foreground/50 mb-3">Lo que este proceso hace</div>
+            <p className="text-foreground/80 leading-relaxed">
+              No está pensado para <em>idear</em> un negocio desde cero. Está pensado para <strong className="text-foreground">ordenar, fortalecer y expandir</strong> lo que ya existe, para construir desde una base más clara y sólida.
+            </p>
+          </div>
+        </div>
+
+        <div className="relative rounded-3xl p-8 md:p-10 text-center bg-gradient-to-br from-[color:var(--magenta)]/10 via-background to-[color:var(--magenta)]/5 border border-[color:var(--magenta)]/20">
+          <div className="text-sm uppercase tracking-[0.22em] text-[color:var(--magenta)] mb-4">Lo que pide de ti</div>
+          <p className="font-display text-xl md:text-3xl leading-snug text-foreground">
+            Este proceso requiere <em className="italic gradient-text">apertura, compromiso y disposición</em> para mirar, decidir y construir con más claridad.
           </p>
         </div>
       </div>
