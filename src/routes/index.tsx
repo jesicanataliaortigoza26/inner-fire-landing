@@ -60,6 +60,7 @@ function Nav() {
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm text-foreground/70">
           <a href="#proceso" className="hover:text-foreground transition">Proceso</a>
+          <a href="#para-quien" className="hover:text-foreground transition">Para quién</a>
           <a href="#versiones" className="hover:text-foreground transition">Versiones</a>
           <a href="#testimonios" className="hover:text-foreground transition">Resultados</a>
           <a href="#faq" className="hover:text-foreground transition">FAQ</a>
@@ -402,6 +403,41 @@ function Proceso() {
   );
 }
 
+function ParaQuien() {
+  return (
+    <section id="para-quien" className="py-16 md:py-24 bg-[oklch(0.96_0.012_80)]">
+      <div className="mx-auto max-w-4xl px-6">
+        <p className="text-lg md:text-xl leading-relaxed text-foreground/80 mb-10">
+          <strong className="text-foreground">
+            Brújula Expansiva 1:1 fue creado para acompañarte en ese momento en el que tu negocio ya existe, pero todavía no refleja con claridad, estructura y coherencia todo lo que podría llegar a ser.
+          </strong>
+        </p>
+
+        <div className="space-y-5 text-foreground/80 leading-relaxed text-lg">
+          <p>Es para vos si ya hiciste camino.</p>
+          <p>Si ya validaste algo.</p>
+          <p>Si ya invertiste, aprendiste, probaste y sostuviste.</p>
+          <p>Y, aún así, sientes que hay algo que todavía no termina de acomodarse del todo.</p>
+          <p>
+            No necesariamente porque te falten herramientas, sino porque hoy tu negocio necesita algo más profundo: dirección, foco, decisiones mejor alineadas y una estructura capaz de sostener el crecimiento que deseas con mayor madurez.
+          </p>
+          <p>
+            Brújula Expansiva 1:1 no está pensado para idear un negocio desde cero.
+          </p>
+          <p>
+            Está pensado para ordenar, fortalecer y expandir lo que ya existe, para que puedas construir desde una base más clara, más sólida y más representativa de la etapa a la que estás lista para entrar.
+          </p>
+          <p>
+            <strong className="text-foreground">
+              Este proceso requiere apertura, compromiso y disposición para mirar, decidir y construir con más claridad.
+            </strong>
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Versiones() {
   const basic = [
     "Mentoría completa 1:1",
@@ -711,6 +747,7 @@ function Landing() {
       <Imagina />
       <SobreMi />
       <Proceso />
+      <ParaQuien />
       <Versiones />
       <Testimonios />
       <LlamadoIntermedio />
