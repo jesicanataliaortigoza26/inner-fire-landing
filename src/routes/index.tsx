@@ -60,6 +60,7 @@ function Nav() {
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm text-foreground/70">
           <a href="#proceso" className="hover:text-foreground transition">Proceso</a>
+          <a href="#para-quien" className="hover:text-foreground transition">Para quién</a>
           <a href="#versiones" className="hover:text-foreground transition">Versiones</a>
           <a href="#testimonios" className="hover:text-foreground transition">Resultados</a>
           <a href="#faq" className="hover:text-foreground transition">FAQ</a>
