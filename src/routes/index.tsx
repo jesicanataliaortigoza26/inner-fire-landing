@@ -423,7 +423,8 @@ function ParaQuien() {
         </div>
 
         <p className="text-center text-foreground/70 text-base md:text-xl leading-relaxed max-w-6xl mx-auto mb-14">
-          Para que refleje, con claridad, estructura y coherencia, la etapa a la que estás lista para entrar.
+          Para que refleje, con claridad, estructura y coherencia, la etapa<br className="hidden md:block" />
+          <span className="block md:inline">a la que estás lista para entrar.</span>
         </p>
 
         <div className="mb-14">
