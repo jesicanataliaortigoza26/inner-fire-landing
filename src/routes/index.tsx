@@ -373,7 +373,7 @@ function Proceso() {
             Cinco fases. Una <span className="italic gradient-text">brújula</span>.
           </h2>
           <p className="mt-6 text-foreground/70 text-lg leading-relaxed">
-            Este proceso combina contenido pregrabado + implementación + sesiones estratégicas.
+            Este proceso combina <strong>contenido pregrabado</strong>, <strong>sesiones estratégicas</strong> y un <strong>recorrido guiado</strong> para <strong>pasar de la claridad a la acción</strong>.
           </p>
         </div>
 
