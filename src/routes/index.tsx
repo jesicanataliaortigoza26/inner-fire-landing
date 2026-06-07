@@ -422,7 +422,7 @@ function ParaQuien() {
           </h2>
         </div>
 
-        <p className="text-center text-foreground/70 text-lg md:text-2xl leading-relaxed max-w-4xl mx-auto mb-14">
+        <p className="text-center text-foreground/70 text-base md:text-xl leading-relaxed max-w-6xl mx-auto mb-14">
           Para que refleje, con claridad, estructura y coherencia, la etapa a la que estás lista para entrar.
         </p>
 
