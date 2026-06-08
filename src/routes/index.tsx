@@ -82,7 +82,7 @@ function VideoIntro() {
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-3">
             Mentoría 1:1 · Método Brújula Expansiva™
           </div>
-          <h2 className="font-display text-3xl md:text-5xl leading-tight">
+          <h2 className="font-display text-3xl md:text-5xl leading-tight text-balance">
             Un nuevo capítulo en tu negocio.
             <br className="hidden md:block" />{" "}
             <em className="italic gradient-text">Claridad, dirección y un sistema real de ventas.</em>
