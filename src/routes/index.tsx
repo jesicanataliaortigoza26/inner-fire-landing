@@ -82,7 +82,7 @@ function VideoIntro() {
           <div className="text-xs uppercase tracking-[0.2em] text-[color:var(--magenta)] mb-3">
             Mentoría 1:1 · Método Brújula Expansiva™
           </div>
-          <h2 className="font-display text-3xl md:text-5xl leading-tight">
+          <h2 className="font-display text-3xl md:text-5xl leading-tight text-balance">
             Un nuevo capítulo en tu negocio.
             <br className="hidden md:block" />{" "}
             <em className="italic gradient-text">Claridad, dirección y un sistema real de ventas.</em>
@@ -476,7 +476,7 @@ function ParaQuien() {
 
 function Versiones() {
   const basic = [
-    "Mentoría completa 1:1",
+    "Mentoría 1:1",
     "6 sesiones estratégicas",
     "Plataforma + roadmap del proceso",
     "Contenido pregrabado por fases",
@@ -500,7 +500,7 @@ function Versiones() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="text-sm uppercase tracking-[0.22em] text-[color:var(--magenta)] mb-5">Dos versiones</div>
-          <h2 className="font-display text-3xl md:text-5xl leading-tight whitespace-nowrap">
+          <h2 className="font-display text-3xl md:text-5xl leading-tight text-balance px-2">
             Elegí cómo querés <em className="italic gradient-text">construir</em>.
           </h2>
           <p className="mt-6 text-foreground/70 text-lg">
