@@ -319,7 +319,7 @@ function Proceso() {
       body: [
         "Acá es donde todo empieza a cambiar.",
         "Porque no solo incorporás nuevas herramientas, sino que empezás a ver tu negocio desde otro lugar.",
-        "Trabajamos sobre tu mentalidad, tu visión y tu forma de liderar, para que puedas sostener el negocio que querés construir.",
+        <span className="font-semibold text-foreground">Trabajamos sobre tu mentalidad, tu visión y tu forma de liderar, para que puedas sostener el negocio que querés construir.</span>,
       ],
       cta: "Es la base de todo lo que viene después.",
     },
@@ -329,8 +329,8 @@ function Proceso() {
       title: "Dirección",
       body: [
         "Dejás de tener ideas sueltas.",
-        "Y empezás a tomar decisiones con claridad.",
-        "Definimos tu modelo de negocio, tu enfoque y cómo querés crecer.",
+        <>Y empezás a tomar <span className="font-semibold text-foreground">decisiones con claridad</span>.</>,
+        <>Definimos tu modelo de negocio, tu enfoque y cómo querés <span className="font-semibold text-foreground">crecer</span>.</>,
       ],
       cta: "Pasás de hacer un poco de todo a construir con intención.",
     },
@@ -340,7 +340,7 @@ function Proceso() {
       title: "Posicionamiento",
       body: [
         "Tu negocio empieza a tomar forma.",
-        "Clarificás a quién le hablás, qué ofrecés y cómo lo comunicás.",
+        <span className="font-semibold text-foreground">Clarificás a quién le hablás, qué ofrecés y cómo lo comunicás.</span>,
       ],
       cta: "Tu mensaje deja de ser general y empieza a ser claro, directo y alineado a tu valor.",
     },
@@ -350,7 +350,7 @@ function Proceso() {
       title: "Sistema",
       body: [
         "Acá aterrizamos todo a tierra.",
-        "Diseñamos cómo vas a vender: canales, estructura, proceso.",
+        <><span className="font-semibold text-foreground">Diseñamos cómo vas a vender</span>: canales, estructura, proceso.</>,
       ],
       cta: "Dejás de improvisar y empezás a tener un sistema.",
     },
@@ -361,7 +361,7 @@ function Proceso() {
       body: [
         "Todo lo anterior se integra y empieza a tomar forma en tu negocio.",
         <span className="font-semibold text-foreground">Lo que antes estaba en ideas, decisiones o definiciones, se traduce en acciones concretas, alineadas y sostenibles.</span>,
-        "Definimos cómo se expresa tu posicionamiento, cómo toma forma tu comunicación, cómo se estructuran tus productos y servicios y cómo empieza a construirse un sistema que acompañe tu forma de vender y crecer.",
+        <>Definimos cómo se expresa tu <span className="font-semibold text-foreground">posicionamiento</span>, cómo toma forma tu <span className="font-semibold text-foreground">comunicación</span>, cómo se estructuran tus productos y servicios y cómo empieza a <span className="font-semibold text-foreground">construirse un sistema que acompañe tu forma de vender</span> y crecer.</>,
       ],
       cta: <span className="font-semibold">Acá es donde lo que antes estaba disperso se ordena, se integra y empieza a funcionar de forma más clara, más sólida y más coherente.</span>,
     },
