@@ -286,7 +286,7 @@ function SobreMi() {
               <strong className="text-foreground">El cambio no vino cuando hice más. Vino cuando empecé a <em className="italic">ordenar</em>.</strong> A entender que un negocio no crece por lo que hacés, sino por cómo está construido.
             </p>
             <p>
-              Ahí empecé a integrar mentalidad, dirección, modelo de negocio, comunicación y sistema de ventas. No como partes sueltas, sino como un todo. Y eso es lo que hoy enseño.
+              Ahí empecé a integrar todo lo que hoy forma parte de mi enfoque: mentalidad, liderazgo, modelo de negocio, posicionamiento, comunicación y sistema de ventas. No como partes separadas, sino como dimensiones que, al ordenarse, permiten construir un negocio más claro, más sólido y más sostenible. Y eso es lo que hoy enseño.
             </p>
             <p>
               <strong className="text-foreground">Creé un método para personas que ya tienen un negocio funcionando, necesitan ordenar, decidir y avanzar con dirección.</strong> El <strong className="text-foreground">Método Brújula Expansiva™</strong> nace desde mi experiencia y la de clientes, desde lo que funciona, desde lo que se puede sostener.
