@@ -359,10 +359,11 @@ function Proceso() {
       icon: Rocket,
       title: "Implementación",
       body: [
-        "Todo lo anterior se convierte en acción.",
-        "Definís tu estrategia de contenido, tu comunicación y tu plan.",
+        "Todo lo anterior se integra y empieza a tomar forma en tu negocio.",
+        <span className="font-semibold text-foreground">Lo que antes estaba en ideas, decisiones o definiciones, se traduce en acciones concretas, alineadas y sostenibles.</span>,
+        "Definimos cómo se expresa tu posicionamiento, cómo toma forma tu comunicación, cómo se estructuran tus productos y servicios y cómo empieza a construirse un sistema que acompañe tu forma de vender y crecer.",
       ],
-      cta: "Acá es donde tu negocio deja de ser idea y empieza a funcionar en la práctica.",
+      cta: <span className="font-semibold">Acá es donde lo que antes estaba disperso se ordena, se integra y empieza a funcionar de forma más clara, más sólida y más coherente.</span>,
     },
   ];
   return (
