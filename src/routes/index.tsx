@@ -769,9 +769,9 @@ function Faq() {
                   {it.q}
                 </h3>
               </div>
-              <p className="pl-9 text-foreground/70 leading-relaxed">
+              <div className="pl-9 text-foreground/70 leading-relaxed">
                 {it.a}
-              </p>
+              </div>
             </article>
           ))}
         </div>
