@@ -668,26 +668,84 @@ function LlamadoIntermedio() {
   );
 }
 function Faq() {
-  const items = [
+  const items: { q: string; a: React.ReactNode }[] = [
+    {
+      q: "¿Cómo sé si este proceso es para mí?",
+      a: (
+        <>
+          <p>Este proceso está pensado para personas que ya tienen un negocio en funcionamiento, que ya validaron algo y que hoy necesitan ordenar, estructurar y sostener su crecimiento con más claridad.</p>
+          <p className="mt-3">Si estás en una etapa inicial o aún no tenés un negocio en marcha, es mejor comenzar por otro tipo de proceso.</p>
+        </>
+      ),
+    },
     {
       q: "¿Necesito tener todo claro antes de empezar?",
-      a: "No. Este proceso está pensado justamente para ayudarte a ordenar ideas, tomar decisiones y construir claridad paso a paso. Eso sí: tenés que tener activo un emprendimiento o negocio y estar vendiendo. Este proceso NO es para idear un negocio.",
+      a: (
+        <>
+          <p>No.</p>
+          <p className="mt-3">Este proceso está diseñado justamente para ayudarte a ordenar lo que hoy está disperso: ideas, decisiones y definiciones.</p>
+          <p className="mt-3">No es necesario tener todo resuelto, pero sí estar en movimiento y con apertura para mirar, decidir y construir con mayor claridad.</p>
+        </>
+      ),
     },
     {
       q: "¿Cuánto tiempo tengo que dedicarle?",
-      a: "Es un proceso activo. Para aprovecharlo al máximo necesitás entre 5 y 6 horas semanales. Eso te permite avanzar con cada etapa y ver resultados reales.",
+      a: (
+        <>
+          <p>Es un proceso activo.</p>
+          <p className="mt-3">Para aprovecharlo al máximo, es recomendable que puedas contar con al menos 5 a 6 horas semanales para avanzar, implementar y sostener lo trabajado en cada etapa.</p>
+          <p className="mt-3">Esto es lo que permite que el proceso no quede solo en claridad, sino que se traduzca en resultados reales.</p>
+        </>
+      ),
     },
     {
       q: "¿Qué pasa si no implemento?",
-      a: "Este proceso está diseñado para ejecutar. Cada instancia requiere avance previo. No hay lugar para quedarse solo en la teoría. Si hoy no tenés el tiempo o la disposición para implementar, este proceso no es para vos.",
+      a: (
+        <>
+          <p>Este proceso está diseñado para ejecutarse.</p>
+          <p className="mt-3">Cada etapa requiere avance previo y construcción progresiva. No está pensado para quedarse en la teoría.</p>
+          <p className="mt-3">Si hoy no tenés el tiempo o la disposición para implementar, es mejor elegir un momento donde sí puedas aprovecharlo en profundidad.</p>
+        </>
+      ),
     },
     {
-      q: "¿Necesito tener marca o equipo?",
-      a: "No. Podés construir todo dentro del proceso. Y si elegís la versión VIP, lo desarrollamos juntas en la implementación.",
+      q: "¿Qué diferencia hay entre Basic y VIP?",
+      a: (
+        <>
+          <p>La diferencia está en el nivel de acompañamiento y profundidad en la implementación.</p>
+          <p className="mt-3">Basic está pensado para quienes quieren avanzar de forma más autónoma y desarrollar su capacidad de autogestión dentro del proceso.</p>
+          <p className="mt-3">VIP es para quienes buscan un acompañamiento más cercano y llevar todo a la práctica con mayor profundidad, incluyendo el desarrollo de activos comerciales claves del negocio.</p>
+        </>
+      ),
     },
     {
-      q: "¿Este proceso es para principiantes?",
-      a: "No. Está pensado para personas que ya tienen un negocio funcionando y quieren ordenar, estructurar y escalar.",
+      q: "¿Cómo funciona el pago?",
+      a: (
+        <>
+          <p>Podés abonar el proceso según tu ubicación.</p>
+          <p className="mt-3">Si estás en Argentina, podés hacerlo vía transferencia o Mercado Pago, con posibilidad de pago en hasta 2 cuotas.</p>
+          <p className="mt-3">Si estás en otro país, podés abonar vía PayPal o Western Union.</p>
+          <p className="mt-3">Si necesitás organizar la forma de pago, lo vemos al momento de avanzar.</p>
+        </>
+      ),
+    },
+    {
+      q: "¿Qué pasa después de realizar el pago?",
+      a: (
+        <>
+          <p>Una vez confirmado el pago, recibís un mail de bienvenida con todos los accesos y el onboarding para comenzar el proceso.</p>
+          <p className="mt-3">Desde ahí, iniciamos de forma ordenada, con claridad sobre los próximos pasos y cómo avanzar en cada etapa.</p>
+        </>
+      ),
+    },
+    {
+      q: "¿Qué resultados puedo esperar?",
+      a: (
+        <>
+          <p>Los resultados dependen de tu punto de partida y del nivel de implementación.</p>
+          <p className="mt-3">En general, este proceso te permite construir un negocio más claro, mejor estructurado, con una propuesta más alineada y una base sólida para vender y crecer de forma más sostenida.</p>
+        </>
+      ),
     },
   ];
   return (
@@ -711,9 +769,9 @@ function Faq() {
                   {it.q}
                 </h3>
               </div>
-              <p className="pl-9 text-foreground/70 leading-relaxed">
+              <div className="pl-9 text-foreground/70 leading-relaxed">
                 {it.a}
-              </p>
+              </div>
             </article>
           ))}
         </div>
