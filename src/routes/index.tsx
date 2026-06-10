@@ -116,7 +116,7 @@ function VideoIntro() {
                   </div>
                 </div>
                 <p className="mt-6 text-sm md:text-base text-[color:var(--cream)]/90 font-medium tracking-wide">
-                  Cómo funciona Brújula Expansiva
+                  Cómo funciona <strong>Brújula Expansiva</strong>
                 </p>
               </button>
             </>
