@@ -111,8 +111,8 @@ function VideoIntro() {
               >
                 <div className="relative">
                   <div className="absolute inset-0 rounded-full bg-[color:var(--cream)] blur-xl opacity-20 group-hover:opacity-35 transition-opacity" />
-                  <div className="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-[color:var(--cream)]/90 text-[oklch(0.18_0.04_245)] shadow-[0_12px_40px_-8px_rgba(0,0,0,0.4)] group-hover:scale-110 transition-transform duration-300">
-                    <Play className="h-8 w-8 md:h-10 md:w-10 ml-1" fill="currentColor" />
+                  <div className="relative flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-full bg-[color:var(--cream)]/90 text-[oklch(0.18_0.04_245)] shadow-[0_12px_40px_-8px_rgba(0,0,0,0.4)] group-hover:scale-110 transition-transform duration-300">
+                    <Play className="h-5 w-5 md:h-10 md:w-10 ml-1" fill="currentColor" />
                   </div>
                 </div>
                 <p className="mt-6 text-sm md:text-base text-[color:var(--cream)]/90 font-medium tracking-wide">
