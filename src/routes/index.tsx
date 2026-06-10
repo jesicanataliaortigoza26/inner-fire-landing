@@ -350,7 +350,7 @@ function Proceso() {
       title: "Sistema",
       body: [
         "Acá aterrizamos todo a tierra.",
-        "Diseñamos cómo vas a vender: canales, estructura, proceso.",
+        <><span className="font-semibold text-foreground">Diseñamos cómo vas a vender</span>: canales, estructura, proceso.</>,
       ],
       cta: "Dejás de improvisar y empezás a tener un sistema.",
     },
