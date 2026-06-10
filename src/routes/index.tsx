@@ -83,13 +83,9 @@ function VideoIntro() {
             Mentoría 1:1 · Método Brújula Expansiva™
           </div>
           <h2 className="font-display text-3xl md:text-5xl leading-tight text-balance">
-            Un nuevo capítulo en tu negocio.
-            <br className="hidden md:block" />{" "}
-            <em className="italic gradient-text">Claridad, dirección y un sistema real de ventas.</em>
+            Cómo funciona <em className="italic gradient-text">Brújula Expansiva</em>
           </h2>
-          <p className="mt-5 text-foreground/60 text-lg max-w-xl mx-auto">
-            Te cuento en el siguiente video cómo funciona este proceso y lo que podés lograr.
-          </p>
+
         </div>
 
         <div className="relative rounded-3xl overflow-hidden border border-foreground/10 shadow-[0_24px_80px_-24px_rgba(5,54,94,0.35)] aspect-video bg-[oklch(0.18_0.04_245)]">
