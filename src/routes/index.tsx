@@ -319,7 +319,7 @@ function Proceso() {
       body: [
         "Acá es donde todo empieza a cambiar.",
         "Porque no solo incorporás nuevas herramientas, sino que empezás a ver tu negocio desde otro lugar.",
-        "Trabajamos sobre tu mentalidad, tu visión y tu forma de liderar, para que puedas sostener el negocio que querés construir.",
+        <span className="font-semibold text-foreground">Trabajamos sobre tu mentalidad, tu visión y tu forma de liderar, para que puedas sostener el negocio que querés construir.</span>,
       ],
       cta: "Es la base de todo lo que viene después.",
     },
