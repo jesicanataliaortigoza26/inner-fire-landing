@@ -16,7 +16,7 @@ import heroImg from "@/assets/hero-brujula.jpg";
 import portraitImg from "@/assets/jesica-portrait.jpeg";
 import workspaceImg from "@/assets/brujula-escritorio.png";
 import silkImg from "@/assets/silk-abstract.jpg";
-import videoThumb from "@/assets/video-thumbnail.jpg";
+import videoThumb from "@/assets/video-thumbnail-jesica.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Landing,
