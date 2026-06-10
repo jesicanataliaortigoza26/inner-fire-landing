@@ -330,7 +330,7 @@ function Proceso() {
       body: [
         "Dejás de tener ideas sueltas.",
         <>Y empezás a tomar <span className="font-semibold text-foreground">decisiones con claridad</span>.</>,
-        <>Definimos tu modelo de negocio, tu enfoque y cómo querés <span className="font-semibold text-foreground">crecer</span>.</>,,
+        <>Definimos tu modelo de negocio, tu enfoque y cómo querés <span className="font-semibold text-foreground">crecer</span>.</>,
       ],
       cta: "Pasás de hacer un poco de todo a construir con intención.",
     },
