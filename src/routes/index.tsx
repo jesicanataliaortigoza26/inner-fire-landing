@@ -92,18 +92,18 @@ function VideoIntro() {
           {!playing && (
             <>
               <img
-                src={videoThumb}
-                alt="Video introductorio de Brújula Expansiva"
+                src={videoThumb.url}
+                alt="Cómo funciona Brújula Expansiva"
                 loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover opacity-80"
+                className="absolute inset-0 w-full h-full object-cover"
                 width={1280}
                 height={720}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/30" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-background/10" />
               <button
                 onClick={() => setPlaying(true)}
-                className="absolute inset-0 flex flex-col items-center justify-center group cursor-pointer"
-                aria-label="Reproducir video introductorio"
+                className="absolute inset-0 flex items-center justify-center group cursor-pointer"
+                aria-label="Reproducir video"
               >
                 <div className="relative">
                   <div className="absolute inset-0 rounded-full bg-[color:var(--cream)] blur-xl opacity-20 group-hover:opacity-35 transition-opacity" />
@@ -111,9 +111,6 @@ function VideoIntro() {
                     <Play className="h-8 w-8 md:h-10 md:w-10 ml-1" fill="currentColor" />
                   </div>
                 </div>
-                <p className="mt-6 text-sm md:text-base text-[color:var(--cream)]/90 font-medium tracking-wide">
-                  Ver video introductorio
-                </p>
               </button>
             </>
           )}
