@@ -340,7 +340,7 @@ function Proceso() {
       title: "Posicionamiento",
       body: [
         "Tu negocio empieza a tomar forma.",
-        "Clarificás a quién le hablás, qué ofrecés y cómo lo comunicás.",
+        <span className="font-semibold text-foreground">Clarificás a quién le hablás, qué ofrecés y cómo lo comunicás.</span>,
       ],
       cta: "Tu mensaje deja de ser general y empieza a ser claro, directo y alineado a tu valor.",
     },
